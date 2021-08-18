@@ -6,13 +6,22 @@ const StyledNavbar = styled.div`
   top: 16px;
   left: 16px;
   width: 100%;
+
+  .active {
+    border-bottom: 2px solid #000;
+  }
+`;
+
+const StyledLink = styled(Link)`
+  font-size: 16px;
+  padding: 4px;
 `;
 
 const Navbar = () => {
   return (
     <StyledNavbar>
       <ul>
-        <Link
+        <StyledLink
           activeClass="active"
           to="welcome"
           spy={true}
@@ -21,8 +30,8 @@ const Navbar = () => {
           duration={500}
         >
           Welcome
-        </Link>
-        <Link
+        </StyledLink>
+        <StyledLink
           activeClass="active"
           to="about"
           spy={true}
@@ -31,8 +40,8 @@ const Navbar = () => {
           duration={500}
         >
           About
-        </Link>
-        <Link
+        </StyledLink>
+        <StyledLink
           activeClass="active"
           to="contact"
           spy={true}
@@ -41,7 +50,7 @@ const Navbar = () => {
           duration={500}
         >
           Contact
-        </Link>
+        </StyledLink>
       </ul>
     </StyledNavbar>
   );

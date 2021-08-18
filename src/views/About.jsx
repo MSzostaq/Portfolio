@@ -1,15 +1,17 @@
 import React from "react";
-import styled from "styled-compoennts";
+import styled from "styled-components";
 
 const Wrapper = styled.div`
+  background-color: #888;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 `;
 
 const About = () => {
   return (
-    <Wrapper>
+    <Wrapper id="about">
       <h1>About</h1>
     </Wrapper>
   );

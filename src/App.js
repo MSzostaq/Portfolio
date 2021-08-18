@@ -6,8 +6,9 @@ import Welcome from "views/Welcome";
 import Navbar from "components/Navbar";
 
 const Wrapper = styled.div`
-  width: 100vw;
-  height: 100vh;
+  position: relative;
+  width: 100%;
+  height: 100%;
 `;
 
 const App = () => {

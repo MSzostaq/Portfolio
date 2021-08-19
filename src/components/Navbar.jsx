@@ -8,19 +8,26 @@ const StyledNavbar = styled.div`
   width: 100%;
 
   .active {
-    border-bottom: 2px solid #000;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
   }
 `;
 
+const StyledList = styled.ul``;
+
 const StyledLink = styled(Link)`
-  font-size: 16px;
+  background-color: transparent;
+  color: ${({ theme }) => theme.colors.white};
+  font-size: ${({ theme }) => theme.fontSize.xl};
+  font-weight: bold;
+  margin: 4px;
   padding: 4px;
 `;
 
 const Navbar = () => {
   return (
     <StyledNavbar>
-      <ul>
+      <StyledList>
         <StyledLink
           activeClass="active"
           to="welcome"
@@ -51,7 +58,7 @@ const Navbar = () => {
         >
           Contact
         </StyledLink>
-      </ul>
+      </StyledList>
     </StyledNavbar>
   );
 };

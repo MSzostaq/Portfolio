@@ -1,5 +1,6 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
+import { theme } from "constants/theme";
 import About from "views/About";
 import Contact from "views/Contact";
 import Welcome from "views/Welcome";
@@ -14,10 +15,12 @@ const Wrapper = styled.div`
 const App = () => {
   return (
     <Wrapper>
-      <Navbar />
-      <Welcome />
-      <About />
-      <Contact />
+      <ThemeProvider theme={theme}>
+        <Navbar />
+        <Welcome />
+        <About />
+        <Contact />
+      </ThemeProvider>
     </Wrapper>
   );
 };

@@ -9,10 +9,16 @@ const Wrapper = styled.div`
   height: 100vh;
 `;
 
+const Title = styled.p`
+  color: ${({ theme }) => theme.colors.darkGrey};
+  font-family: sans-serif;
+  font-size: ${({ theme }) => theme.fontSize.l};
+`;
+
 const Contact = () => {
   return (
     <Wrapper id="contact">
-      <h1>Contact</h1>
+      <Title>Contact me via email, LinkedIn and phone. Enjoy!</Title>
     </Wrapper>
   );
 };

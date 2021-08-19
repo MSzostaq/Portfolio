@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  background-color: #888;
+  background-color: ${({ theme }) => theme.colors.selectedGreen};
   display: flex;
   align-items: center;
   justify-content: center;

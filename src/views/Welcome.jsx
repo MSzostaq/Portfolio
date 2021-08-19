@@ -9,10 +9,16 @@ const Wrapper = styled.div`
   height: 100vh;
 `;
 
+const Title = styled.p`
+  color: ${({ theme }) => theme.colors.darkGrey};
+  font-family: sans-serif;
+  font-size: ${({ theme }) => theme.fontSize.l};
+`;
+
 const Welcome = () => {
   return (
     <Wrapper id="welcome">
-      <h1>Welcome</h1>
+      <Title>Hello! My name is Maciej - future frontend dev!</Title>
     </Wrapper>
   );
 };

@@ -50,6 +50,16 @@ const Navbar = () => {
         </StyledLink>
         <StyledLink
           activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+        >
+          Projects
+        </StyledLink>
+        <StyledLink
+          activeClass="active"
           to="contact"
           spy={true}
           smooth={true}

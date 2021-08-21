@@ -1,10 +1,13 @@
 import { Link } from "react-scroll";
 import styled from "styled-components";
+import Icon from "components/Icon";
 
 const StyledNavbar = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
   position: fixed;
-  top: 16px;
-  left: 16px;
   width: 100%;
 
   .active {
@@ -22,6 +25,15 @@ const StyledLink = styled(Link)`
   font-weight: bold;
   margin: 4px;
   padding: 4px;
+`;
+
+const ButtonList = styled.div``;
+
+const StyledIcon = styled(Icon)`
+  color: ${({ theme }) => theme.colors.white};
+  margin: 8px;
+  width: 40px;
+  height: 40px;
 `;
 
 const Navbar = () => {
@@ -69,6 +81,10 @@ const Navbar = () => {
           Contact
         </StyledLink>
       </StyledList>
+      <ButtonList>
+        <StyledIcon icon="world" />
+        <StyledIcon icon="settings" />
+      </ButtonList>
     </StyledNavbar>
   );
 };

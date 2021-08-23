@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import Icon from "components/Icon";
 
 const Wrapper = styled.div`
@@ -15,9 +16,11 @@ const Title = styled.p`
   color: ${({ theme }) => theme.colors.darkGrey};
   font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.xl};
+  margin: 12px 0;
 `;
 
 const Content = styled.ul`
+  display: flex;
   margin: 8px;
 `;
 
@@ -56,6 +59,13 @@ const StyledReduxtIcon = styled(Icon)`
   height: 64px;
 `;
 
+const StyledGitIcon = styled(Icon)`
+  color: ${({ theme }) => theme.colors.git};
+  margin: 8px;
+  width: 64px;
+  height: 64px;
+`;
+
 const StyledDatocmsIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.datoCMS};
   margin: 8px;
@@ -63,18 +73,38 @@ const StyledDatocmsIcon = styled(Icon)`
   height: 64px;
 `;
 
+const IconAnimation = styled(motion.div)`
+  background-color: transparent;
+`;
+
 const About = () => {
   return (
     <Wrapper id="about">
-      <Title>Known technologies</Title>
+      <Title>Known technologies:</Title>
       <Content>
-        <StyledHtmlIcon icon="html_64" />
-        <StyledCssIcon icon="css_64" />
-        <StyledJsIcon icon="js_64" />
-        <StyledReactIcon icon="react_64" />
-        <StyledReduxtIcon icon="redux_64" />
-        <StyledDatocmsIcon icon="datocms_64" />
+        <IconAnimation whileHover={{ scale: 1.1 }}>
+          <StyledHtmlIcon icon="html_64" />
+        </IconAnimation>
+        <IconAnimation whileHover={{ scale: 1.1 }}>
+          <StyledCssIcon icon="css_64" />
+        </IconAnimation>
+        <IconAnimation whileHover={{ scale: 1.1 }}>
+          <StyledJsIcon icon="js_64" />
+        </IconAnimation>
+        <IconAnimation whileHover={{ scale: 1.1 }}>
+          <StyledReactIcon icon="react_64" />
+        </IconAnimation>
+        <IconAnimation whileHover={{ scale: 1.1 }}>
+          <StyledReduxtIcon icon="redux_64" />
+        </IconAnimation>
+        <IconAnimation whileHover={{ scale: 1.1 }}>
+          <StyledGitIcon icon="git_64" />
+        </IconAnimation>
+        <IconAnimation whileHover={{ scale: 1.1 }}>
+          <StyledDatocmsIcon icon="datocms_64" />
+        </IconAnimation>
       </Content>
+      <Title>English: B2 level, polish: native</Title>
     </Wrapper>
   );
 };

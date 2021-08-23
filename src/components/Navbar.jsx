@@ -46,7 +46,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           offset={0}
-          duration={500}
+          duration={400}
         >
           Welcome
         </StyledLink>
@@ -56,7 +56,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           offset={0}
-          duration={500}
+          duration={400}
         >
           About
         </StyledLink>
@@ -66,7 +66,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           offset={0}
-          duration={500}
+          duration={400}
         >
           Projects
         </StyledLink>
@@ -76,14 +76,14 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           offset={0}
-          duration={500}
+          duration={400}
         >
           Contact
         </StyledLink>
       </StyledList>
       <ButtonList>
-        <StyledIcon icon="world" />
-        <StyledIcon icon="settings" />
+        <StyledIcon icon="sun" />
+        <StyledIcon icon="language" />
       </ButtonList>
     </StyledNavbar>
   );

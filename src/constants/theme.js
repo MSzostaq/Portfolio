@@ -10,6 +10,7 @@ export const theme = {
     darkPurple: "#acb3c0",
     error: "#ce5a5a",
     grey: "#888888",
+    git: "#f05133",
     html: "#fc490b",
     icons: "#696969",
     js: "#ffca28",

@@ -24,6 +24,10 @@ const Content = styled.ul`
   margin: 8px;
 `;
 
+const IconAnimation = styled(motion.div)`
+  background-color: transparent;
+`;
+
 const StyledHtmlIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.html};
   margin: 8px;
@@ -71,10 +75,6 @@ const StyledDatocmsIcon = styled(Icon)`
   margin: 8px;
   width: 64px;
   height: 64px;
-`;
-
-const IconAnimation = styled(motion.div)`
-  background-color: transparent;
 `;
 
 const About = () => {

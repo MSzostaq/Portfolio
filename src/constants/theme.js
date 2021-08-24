@@ -15,6 +15,7 @@ export const theme = {
     icons: "#696969",
     js: "#ffca28",
     lightGrey: "#F0F0F0",
+    linkedIn: "#0177b5",
     react: "#61dafb",
     redux: "#764abc",
     selectedGreen: "#1ad1c2",

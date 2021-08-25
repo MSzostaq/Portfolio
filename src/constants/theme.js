@@ -19,6 +19,7 @@ export const theme = {
     react: "#61dafb",
     redux: "#764abc",
     selectedGreen: "#1ad1c2",
+    silver: "#c0c0c0",
     succes: "#76bd70",
     white: "#f8f8f8",
   },

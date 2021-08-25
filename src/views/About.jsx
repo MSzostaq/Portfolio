@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Icon from "components/Icon";
 
 const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.selectedGreen};
+  background-color: ${({ theme }) => theme.colors.grey};
   display: flex;
   align-items: center;
   justify-content: center;

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Icon from "components/Icon";
 
 const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.succes};
+  background-color: ${({ theme }) => theme.colors.silver};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,6 +51,12 @@ const Contact = () => {
         </IconAnimation>
         <IconAnimation whileHover={{ scale: 1.1 }}>
           <StyledLinkedInIcon icon="linkedin_64" />
+        </IconAnimation>
+        <IconAnimation whileHover={{ scale: 1.1 }}>
+          <StyledGithubIcon icon="phone_64" />
+        </IconAnimation>
+        <IconAnimation whileHover={{ scale: 1.1 }}>
+          <StyledGithubIcon icon="mail_64" />
         </IconAnimation>
       </Content>
     </Wrapper>

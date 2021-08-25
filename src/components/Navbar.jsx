@@ -21,6 +21,7 @@ const StyledList = styled.ul``;
 const StyledLink = styled(Link)`
   background-color: transparent;
   color: ${({ theme }) => theme.colors.white};
+  cursor: pointer;
   font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: bold;
   margin: 4px;

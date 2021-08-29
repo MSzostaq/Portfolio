@@ -41,6 +41,13 @@ const StyledLinkedInIcon = styled(Icon)`
   height: 64px;
 `;
 
+const StyledMailIcon = styled(Icon)`
+  color: ${({ theme }) => theme.colors.darkGrey};
+  margin: 8px;
+  width: 64px;
+  height: 64px;
+`;
+
 const Contact = () => {
   return (
     <Wrapper id="contact">
@@ -56,7 +63,7 @@ const Contact = () => {
           <StyledGithubIcon icon="phone_64" />
         </IconAnimation>
         <IconAnimation whileHover={{ scale: 1.1 }}>
-          <StyledGithubIcon icon="mail_64" />
+          <StyledMailIcon icon="mail_64" />
         </IconAnimation>
       </Content>
     </Wrapper>

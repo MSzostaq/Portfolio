@@ -13,9 +13,16 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.p`
-  color: ${({ theme }) => theme.colors.darkGrey};
+  color: ${({ theme }) => theme.colors.white};
   font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.xl};
+  margin: 12px 0;
+`;
+
+const SecondaryTitle = styled.p`
+  color: ${({ theme }) => theme.colors.white};
+  font-family: sans-serif;
+  font-size: ${({ theme }) => theme.fontSize.l};
   margin: 12px 0;
 `;
 
@@ -104,7 +111,10 @@ const About = () => {
           <StyledDatocmsIcon icon="datocms_64" />
         </IconAnimation>
       </Content>
-      <Title>English: B2 level, polish: native</Title>
+      <SecondaryTitle>
+        Languages: english (B2 level), polish: (native)
+      </SecondaryTitle>
+      <SecondaryTitle>Bachelor of Engineering</SecondaryTitle>
     </Wrapper>
   );
 };

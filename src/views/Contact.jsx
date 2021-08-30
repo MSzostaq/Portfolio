@@ -13,9 +13,9 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.p`
-  color: ${({ theme }) => theme.colors.darkGrey};
+  color: ${({ theme }) => theme.colors.white};
   font-family: sans-serif;
-  font-size: ${({ theme }) => theme.fontSize.l};
+  font-size: ${({ theme }) => theme.fontSize.xl};
 `;
 
 const Content = styled.ul`
@@ -51,7 +51,7 @@ const StyledMailIcon = styled(Icon)`
 const Contact = () => {
   return (
     <Wrapper id="contact">
-      <Title>Contact me via email, gitHub, LinkedIn. Enjoy!</Title>
+      <Title>Contact me via emai or LinkedIn. Enjoy!</Title>
       <Content>
         <IconAnimation whileHover={{ scale: 1.1 }}>
           <StyledGithubIcon icon="github_64" />

@@ -29,6 +29,7 @@ const SecondaryTitle = styled.p`
   font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: bold;
+  margin-top: 24px;
 `;
 
 const Welcome = () => {

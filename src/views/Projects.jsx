@@ -11,31 +11,33 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.p`
-  color: ${({ theme }) => theme.colors.darkGrey};
+  color: ${({ theme }) => theme.colors.white};
   font-family: sans-serif;
-  font-size: ${({ theme }) => theme.fontSize.l};
+  font-size: ${({ theme }) => theme.fontSize.xl};
 `;
 
-const Content = styled.div`
+const ProjectWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  margin: 8px;
 `;
 
 const ProjectCard = styled.div`
-  background-color: ${({ theme }) => theme.colors.darkGrey};
-  margin: 8px;
-  position: absolute;
-  width: 200px;
-  height: 20vh;
+  background-color: ${({ theme }) => theme.colors.gray};
+  border-radius: 8px;
+  margin: 12px;
+  width: 400px;
+  height: 400px;
 `;
 
 const Contact = () => {
   return (
     <Wrapper id="projects">
-      <Title>Check out my projects!</Title>
-      <Content>
+      <Title>Check out my projects and GitHub profile!</Title>
+      <ProjectWrapper>
         <ProjectCard />
-      </Content>
+        <ProjectCard />
+        <ProjectCard />
+      </ProjectWrapper>
     </Wrapper>
   );
 };

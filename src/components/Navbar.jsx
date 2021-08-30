@@ -28,10 +28,11 @@ const StyledLink = styled(Link)`
   padding: 4px;
 `;
 
-const ButtonList = styled.div``;
+const IconList = styled.div``;
 
 const StyledIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.white};
+  cursor: pointer;
   margin: 8px;
   width: 40px;
   height: 40px;
@@ -82,10 +83,10 @@ const Navbar = () => {
           Contact
         </StyledLink>
       </StyledList>
-      <ButtonList>
+      <IconList>
         <StyledIcon icon="sun" />
         <StyledIcon icon="language" />
-      </ButtonList>
+      </IconList>
     </StyledNavbar>
   );
 };

@@ -7,14 +7,19 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  grid-gap: 4px;
   height: 100vh;
 `;
 
 const WelcomeWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.grey};
   border-radius: 8px;
-  padding: 64px;
+  padding: 32px;
+  width: 80%;
+
+  @media (min-width: 800px) {
+    padding: 64px;
+    width: 50%;
+  }
 `;
 
 const Title = styled.p`

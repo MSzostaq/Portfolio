@@ -18,15 +18,25 @@ const Title = styled.p`
 
 const ProjectWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   margin: 8px;
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+  }
 `;
 
 const ProjectCard = styled.div`
   background-color: ${({ theme }) => theme.colors.gray};
   border-radius: 8px;
   margin: 12px;
-  width: 400px;
-  height: 400px;
+  width: 100px;
+  height: 100px;
+
+  @media (min-width: 800px) {
+    width: 400px;
+    height: 400px;
+  }
 `;
 
 const Contact = () => {

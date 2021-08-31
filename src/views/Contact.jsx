@@ -54,9 +54,6 @@ const Contact = () => {
       <Title>Contact me via emai or LinkedIn. Enjoy!</Title>
       <Content>
         <IconAnimation whileHover={{ scale: 1.1 }}>
-          <StyledGithubIcon icon="github_64" />
-        </IconAnimation>
-        <IconAnimation whileHover={{ scale: 1.1 }}>
           <StyledLinkedInIcon icon="linkedin_64" />
         </IconAnimation>
         <IconAnimation whileHover={{ scale: 1.1 }}>

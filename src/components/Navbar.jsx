@@ -6,8 +6,8 @@ const StyledNavbar = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 8px;
   position: fixed;
+  margin: 4px;
   width: 100%;
 
   .active {
@@ -24,7 +24,7 @@ const StyledLink = styled(Link)`
   cursor: pointer;
   font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: bold;
-  margin: 4px;
+  margin: 2px;
   padding: 4px;
 `;
 
@@ -33,9 +33,14 @@ const IconList = styled.div``;
 const StyledIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.white};
   cursor: pointer;
-  margin: 8px;
-  width: 40px;
-  height: 40px;
+  margin: 4px;
+  width: 32px;
+  height: 34px;
+
+  @media (min-width: 800px) {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 const Navbar = () => {
@@ -47,7 +52,6 @@ const Navbar = () => {
           to="welcome"
           spy={true}
           smooth={true}
-          offset={0}
           duration={400}
         >
           Welcome
@@ -57,7 +61,6 @@ const Navbar = () => {
           to="about"
           spy={true}
           smooth={true}
-          offset={0}
           duration={400}
         >
           About
@@ -67,7 +70,6 @@ const Navbar = () => {
           to="projects"
           spy={true}
           smooth={true}
-          offset={0}
           duration={400}
         >
           Projects
@@ -77,7 +79,6 @@ const Navbar = () => {
           to="contact"
           spy={true}
           smooth={true}
-          offset={0}
           duration={400}
         >
           Contact

@@ -22,22 +22,30 @@ const StyledLink = styled(Link)`
   background-color: transparent;
   color: ${({ theme }) => theme.colors.white};
   cursor: pointer;
-  font-size: ${({ theme }) => theme.fontSize.xl};
+  font-size: ${({ theme }) => theme.fontSize.l};
   font-weight: bold;
   margin: 2px;
   padding: 4px;
+
+  @media (min-width: 800px) {
+    font-size: ${({ theme }) => theme.fontSize.xl};
+    margin: 4px;
+  }
 `;
 
-const IconList = styled.div``;
+const IconList = styled.div`
+  margin: 0 4px;
+`;
 
 const StyledIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.white};
   cursor: pointer;
   margin: 4px;
-  width: 32px;
-  height: 34px;
+  width: 24px;
+  height: 24px;
 
   @media (min-width: 800px) {
+    margin: 8px;
     width: 40px;
     height: 40px;
   }

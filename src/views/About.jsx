@@ -29,7 +29,14 @@ const SecondaryTitle = styled.p`
 
 const Content = styled.ul`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 8px;
+  width: 80%;
+
+  @media (min-width: 800px) {
+    width: 80%;
+  }
 `;
 
 const IconAnimation = styled(motion.div)`

@@ -14,7 +14,11 @@ const Wrapper = styled.div`
 const Title = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-family: sans-serif;
-  font-size: ${({ theme }) => theme.fontSize.xl};
+  font-size: ${({ theme }) => theme.fontSize.l};
+
+  @media (min-width: 800px) {
+    font-size: ${({ theme }) => theme.fontSize.xl};
+  }
 `;
 
 const ProjectWrapper = styled.div`
@@ -30,9 +34,9 @@ const ProjectWrapper = styled.div`
 const ProjectCard = styled.div`
   background-color: ${({ theme }) => theme.colors.gray};
   border-radius: 8px;
-  margin: 12px;
-  width: 100px;
-  height: 100px;
+  margin: 8px;
+  width: 220px;
+  height: 180px;
 
   @media (min-width: 800px) {
     width: 400px;

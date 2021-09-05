@@ -60,7 +60,7 @@ const Navbar = () => {
           to="welcome"
           spy={true}
           smooth={true}
-          duration={400}
+          duration={300}
         >
           Welcome
         </StyledLink>
@@ -69,7 +69,7 @@ const Navbar = () => {
           to="about"
           spy={true}
           smooth={true}
-          duration={400}
+          duration={300}
         >
           About
         </StyledLink>
@@ -78,7 +78,7 @@ const Navbar = () => {
           to="projects"
           spy={true}
           smooth={true}
-          duration={400}
+          duration={300}
         >
           Projects
         </StyledLink>
@@ -87,7 +87,7 @@ const Navbar = () => {
           to="contact"
           spy={true}
           smooth={true}
-          duration={400}
+          duration={300}
         >
           Contact
         </StyledLink>

@@ -25,11 +25,12 @@ export const theme = {
     white: "#f8f8f8",
   },
   fontSize: {
+    xxxl: "64px",
     xxl: "48px",
-    xl: "24px",
-    l: "18px",
-    m: "14px",
-    s: "12px",
-    xs: "8px",
+    xl: "32px",
+    l: "24px",
+    m: "18px",
+    s: "14px",
+    xs: "12px",
   },
 };

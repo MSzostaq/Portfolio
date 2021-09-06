@@ -52,13 +52,10 @@ const StyledMailIcon = styled(Icon)`
 const Contact = () => {
   return (
     <Wrapper id="contact">
-      <Title>Contact me via emai or LinkedIn. Enjoy!</Title>
+      <Title>Contact me. Enjoy!</Title>
       <Content>
         <IconAnimation whileHover={{ scale: 1.1 }}>
           <StyledLinkedInIcon icon="linkedin_64" />
-        </IconAnimation>
-        <IconAnimation whileHover={{ scale: 1.1 }}>
-          <StyledGithubIcon icon="phone_64" />
         </IconAnimation>
         <IconAnimation whileHover={{ scale: 1.1 }}>
           <StyledMailIcon icon="mail_64" />

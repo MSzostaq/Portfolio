@@ -42,7 +42,7 @@ const Welcome = () => {
   return (
     <Wrapper id="welcome">
       <WelcomeWrapper>
-        <Title>Hello! My name is Maciej!</Title>
+        <Title>My name is Maciej!</Title>
         <SecondaryTitle>future frontend dev</SecondaryTitle>
       </WelcomeWrapper>
     </Wrapper>

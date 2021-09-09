@@ -54,7 +54,7 @@ const Navbar = () => {
           smooth={true}
           duration={300}
         >
-          About
+          Skills
         </StyledLink>
         <StyledLink
           activeClass="active"

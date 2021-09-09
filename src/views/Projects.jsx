@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Particles from "react-particles-js";
+import Typed from "react-typed";
 import Icon from "components/Icon";
 import ProjectCard from "components/ProjectCard";
 
@@ -17,7 +19,11 @@ const Wrapper = styled.div`
   }
 `;
 
-const Title = styled.p`
+const ContentWrapper = styled.div`
+  position: absolute;
+`;
+
+const Title = styled(Typed)`
   color: ${({ theme }) => theme.colors.white};
   font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.xl};
@@ -111,54 +117,143 @@ const ButtonWrapper = styled.div``;
 const Contact = () => {
   return (
     <Wrapper id="projects">
-      <Title>Check out my projects</Title>
-      <ProjectWrapper>
-        <ProjectCard>
-          <ProjectTitle>Cryptorate</ProjectTitle>
-          <ProjectContent>
-            My first React application. Cryptorate comnnects with external API -
-            DatoCMS. Cryptorate has pagination, shows the data and is fully
-            responsive.
-          </ProjectContent>
-          <IconWrapper>
-            <StyledHtmlIcon icon="html_24" />
-            <StyledCssIcon icon="css_24" />
-            <StyledJsIcon icon="js_24" />
-            <StyledReactIcon icon="react_24" />
-            <StyledDatocmsIcon icon="datocms_24" />
-          </IconWrapper>
-          <ButtonWrapper></ButtonWrapper>
-        </ProjectCard>
-        <ProjectCard>
-          <ProjectTitle>TODO-List</ProjectTitle>
-          <ProjectContent>
-            Clone of Google Keep, simple TODO List made with React, React-Redux
-            and Redux-Saga.
-          </ProjectContent>
-          <IconWrapper>
-            <StyledHtmlIcon icon="html_24" />
-            <StyledCssIcon icon="css_24" />
-            <StyledJsIcon icon="js_24" />
-            <StyledReactIcon icon="react_24" />
-            <StyledReduxIcon icon="redux_24" />
-          </IconWrapper>
-          <ButtonWrapper></ButtonWrapper>
-        </ProjectCard>
-        <ProjectCard>
-          <ProjectTitle>tic-tac-toe</ProjectTitle>
-          <ProjectContent>
-            Tic-tac-toe game with two game modes single player (vs Ai) and
-            multiplayer vs other player (socket.io).
-          </ProjectContent>
-          <IconWrapper>
-            <StyledHtmlIcon icon="html_24" />
-            <StyledCssIcon icon="css_24" />
-            <StyledJsIcon icon="js_24" />
-            <StyledReactIcon icon="react_24" />
-          </IconWrapper>
-          <ButtonWrapper></ButtonWrapper>
-        </ProjectCard>
-      </ProjectWrapper>
+      <Particles
+        params={{
+          particles: {
+            number: {
+              value: 30,
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+            },
+            color: {
+              value: "#ffffff",
+            },
+            shape: {
+              type: "circle",
+              stroke: {
+                width: 0,
+                color: "#000000",
+              },
+              image: {
+                src: "img/github.svg",
+                width: 100,
+                height: 100,
+              },
+            },
+            opacity: {
+              value: 0.4,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false,
+              },
+            },
+            size: {
+              value: 3,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 2,
+                size_min: 0.1,
+                sync: false,
+              },
+            },
+            line_linked: {
+              enable_auto: true,
+              distance: 100,
+              color: "#fff",
+              opacity: 1,
+              width: 1,
+              condensed_mode: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 600,
+              },
+            },
+            move: {
+              enable: true,
+              speed: 1,
+              direction: "none",
+              random: false,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+              attract: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 1200,
+              },
+            },
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: {
+                enable: false,
+              },
+              onclick: {
+                enable: false,
+              },
+              resize: true,
+            },
+          },
+          retina_detect: true,
+        }}
+      />
+      <ContentWrapper>
+        <Title strings={["Check out my projects"]} typeSpeed={40} />
+        <ProjectWrapper>
+          <ProjectCard>
+            <ProjectTitle>Cryptorate</ProjectTitle>
+            <ProjectContent>
+              My first React application. Cryptorate comnnects with external API
+              - DatoCMS. Cryptorate has pagination, shows the data and is fully
+              responsive.
+            </ProjectContent>
+            <IconWrapper>
+              <StyledHtmlIcon icon="html_24" />
+              <StyledCssIcon icon="css_24" />
+              <StyledJsIcon icon="js_24" />
+              <StyledReactIcon icon="react_24" />
+              <StyledDatocmsIcon icon="datocms_24" />
+            </IconWrapper>
+            <ButtonWrapper></ButtonWrapper>
+          </ProjectCard>
+          <ProjectCard>
+            <ProjectTitle>TODO-List</ProjectTitle>
+            <ProjectContent>
+              Clone of Google Keep, simple TODO List made with React,
+              React-Redux and Redux-Saga.
+            </ProjectContent>
+            <IconWrapper>
+              <StyledHtmlIcon icon="html_24" />
+              <StyledCssIcon icon="css_24" />
+              <StyledJsIcon icon="js_24" />
+              <StyledReactIcon icon="react_24" />
+              <StyledReduxIcon icon="redux_24" />
+            </IconWrapper>
+            <ButtonWrapper></ButtonWrapper>
+          </ProjectCard>
+          <ProjectCard>
+            <ProjectTitle>tic-tac-toe</ProjectTitle>
+            <ProjectContent>
+              Tic-tac-toe game with two game modes single player (vs Ai) and
+              multiplayer vs other player (socket.io).
+            </ProjectContent>
+            <IconWrapper>
+              <StyledHtmlIcon icon="html_24" />
+              <StyledCssIcon icon="css_24" />
+              <StyledJsIcon icon="js_24" />
+              <StyledReactIcon icon="react_24" />
+            </IconWrapper>
+            <ButtonWrapper></ButtonWrapper>
+          </ProjectCard>
+        </ProjectWrapper>
+      </ContentWrapper>
     </Wrapper>
   );
 };

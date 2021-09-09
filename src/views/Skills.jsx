@@ -6,7 +6,7 @@ import Typed from "react-typed";
 import Icon from "components/Icon";
 
 const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.gray};
+  background-color: ${({ theme }) => theme.colors.black};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,34 +23,84 @@ const Title = styled(Typed)`
   color: ${({ theme }) => theme.colors.white};
   font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.xl};
+  margin: 12px 0;
+`;
+
+const SecondaryTitle = styled(Typed)`
+  color: ${({ theme }) => theme.colors.white};
+  font-family: sans-serif;
+  font-size: ${({ theme }) => theme.fontSize.l};
+  margin: 12px 0;
 `;
 
 const Content = styled.ul`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 8px;
+  width: 80%;
+
+  @media (min-width: 800px) {
+    width: 80%;
+  }
 `;
 
 const IconAnimation = styled(motion.div)`
   background-color: transparent;
 `;
 
-const StyledGithubIcon = styled(Icon)`
-  color: ${({ theme }) => theme.colors.darkGrey};
+const StyledHtmlIcon = styled(Icon)`
+  color: ${({ theme }) => theme.colors.html};
   margin: 8px;
   width: 64px;
   height: 64px;
 `;
 
-const StyledLinkedInIcon = styled(Icon)`
-  color: ${({ theme }) => theme.colors.linkedIn};
+const StyledCssIcon = styled(Icon)`
+  color: ${({ theme }) => theme.colors.css};
   margin: 8px;
   width: 64px;
   height: 64px;
 `;
 
-const Contact = () => {
+const StyledJsIcon = styled(Icon)`
+  color: ${({ theme }) => theme.colors.js};
+  margin: 8px;
+  width: 64px;
+  height: 64px;
+`;
+
+const StyledReactIcon = styled(Icon)`
+  color: ${({ theme }) => theme.colors.react};
+  margin: 8px;
+  width: 64px;
+  height: 64px;
+`;
+
+const StyledReduxtIcon = styled(Icon)`
+  color: ${({ theme }) => theme.colors.redux};
+  margin: 8px;
+  width: 64px;
+  height: 64px;
+`;
+
+const StyledGitIcon = styled(Icon)`
+  color: ${({ theme }) => theme.colors.git};
+  margin: 8px;
+  width: 64px;
+  height: 64px;
+`;
+
+const StyledDatocmsIcon = styled(Icon)`
+  color: ${({ theme }) => theme.colors.datoCMS};
+  margin: 8px;
+  width: 64px;
+  height: 64px;
+`;
+
+const Skills = () => {
   return (
-    <Wrapper id="contact">
+    <Wrapper id="about">
       <Particles
         params={{
           particles: {
@@ -139,21 +189,38 @@ const Contact = () => {
         }}
       />
       <ContentWrapper>
-        <Title strings={["Contact me. Enjoy!"]} typeSpeed={40} />
+        <Title strings={["Technologies I already used"]} typeSpeed={40} />
         <Content>
           <IconAnimation whileHover={{ scale: 1.1 }}>
-            <StyledGithubIcon icon="at" />
+            <StyledHtmlIcon icon="html_64" />
           </IconAnimation>
           <IconAnimation whileHover={{ scale: 1.1 }}>
-            <StyledGithubIcon icon="github_64" />
+            <StyledCssIcon icon="css_64" />
           </IconAnimation>
           <IconAnimation whileHover={{ scale: 1.1 }}>
-            <StyledLinkedInIcon icon="linkedin_64" />
+            <StyledJsIcon icon="js_64" />
+          </IconAnimation>
+          <IconAnimation whileHover={{ scale: 1.1 }}>
+            <StyledReactIcon icon="react_64" />
+          </IconAnimation>
+          <IconAnimation whileHover={{ scale: 1.1 }}>
+            <StyledReduxtIcon icon="redux_64" />
+          </IconAnimation>
+          <IconAnimation whileHover={{ scale: 1.1 }}>
+            <StyledGitIcon icon="git_64" />
+          </IconAnimation>
+          <IconAnimation whileHover={{ scale: 1.1 }}>
+            <StyledDatocmsIcon icon="datocms_64" />
           </IconAnimation>
         </Content>
+        <SecondaryTitle
+          strings={["Languages: english (B2 level), polish (native)"]}
+          typeSpeed={40}
+        />
+        <SecondaryTitle strings={["Bachelor of Engineering"]} typeSpeed={40} />
       </ContentWrapper>
     </Wrapper>
   );
 };
 
-export default Contact;
+export default Skills;

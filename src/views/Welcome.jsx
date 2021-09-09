@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Particles from "react-particles-js";
+import Typed from "react-typed";
 
 const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.darkGrey};
@@ -15,6 +17,7 @@ const WelcomeWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.grey};
   border-radius: 8px;
   padding: 32px;
+  position: absolute;
   width: 80%;
 
   @media (min-width: 800px) {
@@ -23,14 +26,14 @@ const WelcomeWrapper = styled.div`
   }
 `;
 
-const Title = styled.p`
+const Title = styled(Typed)`
   color: ${({ theme }) => theme.colors.white};
   font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.xxl};
   font-weight: bold;
 `;
 
-const SecondaryTitle = styled.p`
+const SecondaryTitle = styled(Typed)`
   color: ${({ theme }) => theme.colors.white};
   font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.xl};
@@ -41,9 +44,33 @@ const SecondaryTitle = styled.p`
 const Welcome = () => {
   return (
     <Wrapper id="welcome">
+      <Particles
+        params={{
+          particles: {
+            number: {
+              value: 30,
+              density: {
+                enable: true,
+                value_area: 900,
+              },
+            },
+            shape: {
+              type: "square",
+              stroke: {
+                width: 6,
+                color: "#f9ab00",
+              },
+            },
+          },
+        }}
+      />
       <WelcomeWrapper>
-        <Title>My name is Maciej!</Title>
-        <SecondaryTitle>future frontend dev</SecondaryTitle>
+        <Title
+          strings={["Hello there! I'm Maciek", "your future frontend dev"]}
+          typeSpeed={40}
+          smartBackspace={true}
+          fadeOut={true}
+        />
       </WelcomeWrapper>
     </Wrapper>
   );

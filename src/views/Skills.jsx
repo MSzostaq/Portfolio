@@ -15,6 +15,11 @@ const Wrapper = styled.div`
   height: 100%;
 `;
 
+const StyledParticles = styled(Particles)`
+  width: 100%;
+  height: 100%;
+`;
+
 const ContentWrapper = styled.div`
   position: absolute;
 `;
@@ -101,43 +106,38 @@ const StyledDatocmsIcon = styled(Icon)`
 const Skills = () => {
   return (
     <Wrapper id="about">
-      <Particles
+      <StyledParticles
         params={{
           particles: {
             number: {
-              value: 30,
+              value: 50,
               density: {
                 enable: true,
-                value_area: 800,
+                value_area: 400,
               },
             },
             color: {
-              value: "#ffffff",
+              value: "#fff",
             },
             shape: {
               type: "circle",
               stroke: {
-                width: 0,
-                color: "#000000",
-              },
-              image: {
-                src: "img/github.svg",
-                width: 100,
-                height: 100,
+                width: 2,
+                color: "#f9ab00",
               },
             },
             opacity: {
-              value: 0.4,
+              value: 0.5,
               random: true,
               anim: {
                 enable: true,
-                speed: 1,
+                speed: 1.5,
                 opacity_min: 0.1,
                 sync: false,
               },
             },
             size: {
-              value: 3,
+              value: 5,
               random: true,
               anim: {
                 enable: true,

@@ -6,6 +6,7 @@ export const theme = {
     blue: "#0f5298",
     css: "#2196f3",
     datoCMS: "#ff7751",
+    darkBlue: "#000033",
     darkGrey: "#434343",
     darkPurple: "#acb3c0",
     error: "#ce5a5a",
@@ -23,6 +24,7 @@ export const theme = {
     silver: "#c0c0c0",
     succes: "#76bd70",
     white: "#f8f8f8",
+    yellow: "#ffd11a",
   },
   fontSize: {
     xxxl: "64px",

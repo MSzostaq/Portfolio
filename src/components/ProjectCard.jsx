@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const ProjectCard = styled.div`
-  background-color: ${({ theme }) => theme.colors.black};
+  background-color: rgba(0, 0, 102, 0.6);
   border-radius: 8px;
   margin: 4px;
   width: 70vw;

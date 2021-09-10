@@ -10,7 +10,7 @@ const StyledNavbar = styled.div`
   margin: 8px 2px;
 
   .active {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 204, 0, 0.2);
     border-radius: 4px;
   }
 `;
@@ -19,7 +19,7 @@ const LinkWrapper = styled.ul``;
 
 const StyledLink = styled(Link)`
   background-color: transparent;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.yellow};
   cursor: pointer;
   font-size: ${({ theme }) => theme.fontSize.m};
   font-weight: bold;

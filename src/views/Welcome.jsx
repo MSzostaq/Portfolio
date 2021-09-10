@@ -4,7 +4,7 @@ import Particles from "react-particles-js";
 import Typed from "react-typed";
 
 const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.black};
+  background-color: ${({ theme }) => theme.colors.darkBlue};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,7 +74,7 @@ const Welcome = () => {
               random: true,
               anim: {
                 enable: true,
-                speed: 1.5,
+                speed: 1,
                 opacity_min: 0.1,
                 sync: false,
               },
@@ -84,7 +84,7 @@ const Welcome = () => {
               random: true,
               anim: {
                 enable: true,
-                speed: 2,
+                speed: 1,
                 size_min: 0.1,
                 sync: false,
               },

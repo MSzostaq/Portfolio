@@ -2,11 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import Particles from "react-particles-js";
 import Typed from "react-typed";
+import Button from "components/Button";
 import Icon from "components/Icon";
 import ProjectCard from "components/ProjectCard";
 
 const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.black};
+  background-color: ${({ theme }) => theme.colors.darkBlue};
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -117,7 +118,17 @@ const StyledDatocmsIcon = styled(Icon)`
   height: 48px;
 `;
 
-const ButtonWrapper = styled.div``;
+const ButtonWrapper = styled.div`
+  display: flex;
+  grid-gap: 4px;
+  margin: 4px;
+`;
+
+const StyledGithub = styled(Icon)`
+  color: ${({ theme }) => theme.colors.darkGrey};
+  width: 24px;
+  height: 24px;
+`;
 
 const Contact = () => {
   return (
@@ -147,7 +158,7 @@ const Contact = () => {
               random: true,
               anim: {
                 enable: true,
-                speed: 1.5,
+                speed: 1,
                 opacity_min: 0.1,
                 sync: false,
               },
@@ -157,7 +168,7 @@ const Contact = () => {
               random: true,
               anim: {
                 enable: true,
-                speed: 2,
+                speed: 1,
                 size_min: 0.1,
                 sync: false,
               },
@@ -221,7 +232,13 @@ const Contact = () => {
               <StyledReactIcon icon="react_24" />
               <StyledDatocmsIcon icon="datocms_24" />
             </IconWrapper>
-            <ButtonWrapper></ButtonWrapper>
+            <ButtonWrapper>
+              <Button>
+                Check out code
+                <StyledGithub icon="github_24" />
+              </Button>
+              <Button>Try it out</Button>
+            </ButtonWrapper>
           </ProjectCard>
           <ProjectCard>
             <ProjectTitle>TODO-List</ProjectTitle>
@@ -236,7 +253,10 @@ const Contact = () => {
               <StyledReactIcon icon="react_24" />
               <StyledReduxIcon icon="redux_24" />
             </IconWrapper>
-            <ButtonWrapper></ButtonWrapper>
+            <ButtonWrapper>
+              <Button>Check out code</Button>
+              <Button>Try it out</Button>
+            </ButtonWrapper>
           </ProjectCard>
           <ProjectCard>
             <ProjectTitle>tic-tac-toe</ProjectTitle>
@@ -250,7 +270,10 @@ const Contact = () => {
               <StyledJsIcon icon="js_24" />
               <StyledReactIcon icon="react_24" />
             </IconWrapper>
-            <ButtonWrapper></ButtonWrapper>
+            <ButtonWrapper>
+              <Button>Check out code</Button>
+              <Button>Try it out</Button>
+            </ButtonWrapper>
           </ProjectCard>
         </ProjectWrapper>
       </ContentWrapper>

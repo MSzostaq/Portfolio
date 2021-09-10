@@ -6,7 +6,7 @@ import Typed from "react-typed";
 import Icon from "components/Icon";
 
 const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.black};
+  background-color: ${({ theme }) => theme.colors.darkBlue};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,7 +81,7 @@ const Contact = () => {
               random: true,
               anim: {
                 enable: true,
-                speed: 1.5,
+                speed: 1,
                 opacity_min: 0.1,
                 sync: false,
               },
@@ -91,7 +91,7 @@ const Contact = () => {
               random: true,
               anim: {
                 enable: true,
-                speed: 2,
+                speed: 1,
                 size_min: 0.1,
                 sync: false,
               },

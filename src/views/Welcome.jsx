@@ -135,7 +135,6 @@ const Welcome = () => {
         <Title
           strings={["Hello there! I'm Maciek", "your future frontend dev"]}
           typeSpeed={40}
-          smartBackspace={true}
           fadeOut={true}
         />
       </WelcomeWrapper>

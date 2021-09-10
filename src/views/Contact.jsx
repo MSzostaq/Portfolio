@@ -40,7 +40,7 @@ const IconAnimation = styled(motion.div)`
 `;
 
 const StyledGithubIcon = styled(Icon)`
-  color: ${({ theme }) => theme.colors.darkGrey};
+  color: ${({ theme }) => theme.colors.lightGrey};
   margin: 8px;
   width: 64px;
   height: 64px;

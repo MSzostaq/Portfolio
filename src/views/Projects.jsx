@@ -126,6 +126,7 @@ const ButtonWrapper = styled.div`
 
 const StyledGithub = styled(Icon)`
   color: ${({ theme }) => theme.colors.darkGrey};
+  margin: 0 2px;
   width: 24px;
   height: 24px;
 `;
@@ -234,8 +235,8 @@ const Contact = () => {
             </IconWrapper>
             <ButtonWrapper>
               <Button>
-                Check out code
                 <StyledGithub icon="github_24" />
+                Check out code
               </Button>
               <Button>Try it out</Button>
             </ButtonWrapper>
@@ -254,7 +255,10 @@ const Contact = () => {
               <StyledReduxIcon icon="redux_24" />
             </IconWrapper>
             <ButtonWrapper>
-              <Button>Check out code</Button>
+              <Button>
+                <StyledGithub icon="github_24" />
+                Check out code
+              </Button>
               <Button>Try it out</Button>
             </ButtonWrapper>
           </ProjectCard>
@@ -271,7 +275,10 @@ const Contact = () => {
               <StyledReactIcon icon="react_24" />
             </IconWrapper>
             <ButtonWrapper>
-              <Button>Check out code</Button>
+              <Button>
+                <StyledGithub icon="github_24" />
+                Check out code
+              </Button>
               <Button>Try it out</Button>
             </ButtonWrapper>
           </ProjectCard>

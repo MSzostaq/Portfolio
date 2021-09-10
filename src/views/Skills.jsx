@@ -22,31 +22,28 @@ const StyledParticles = styled(Particles)`
 
 const ContentWrapper = styled.div`
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 const Title = styled(Typed)`
   color: ${({ theme }) => theme.colors.white};
   font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.xl};
-  margin: 12px 0;
-`;
-
-const SecondaryTitle = styled(Typed)`
-  color: ${({ theme }) => theme.colors.white};
-  font-family: sans-serif;
-  font-size: ${({ theme }) => theme.fontSize.l};
-  margin: 12px 0;
+  margin: 12px 4px;
 `;
 
 const Content = styled.ul`
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 8px;
   width: 80%;
 
   @media (min-width: 800px) {
-    width: 80%;
+    flex-wrap: nowrap;
   }
 `;
 
@@ -101,6 +98,14 @@ const StyledDatocmsIcon = styled(Icon)`
   margin: 8px;
   width: 64px;
   height: 64px;
+`;
+
+const SecondaryTitle = styled(Typed)`
+  color: ${({ theme }) => theme.colors.white};
+  font-family: sans-serif;
+  font-size: ${({ theme }) => theme.fontSize.l};
+  margin: 12px 4px;
+  text-align: center;
 `;
 
 const Skills = () => {
@@ -214,10 +219,11 @@ const Skills = () => {
           </IconAnimation>
         </Content>
         <SecondaryTitle
-          strings={["Languages: english (B2 level), polish (native)"]}
+          strings={[
+            "Languages: english (B2 level), polish (native), Bachelor of Engineering",
+          ]}
           typeSpeed={40}
         />
-        <SecondaryTitle strings={["Bachelor of Engineering"]} typeSpeed={40} />
       </ContentWrapper>
     </Wrapper>
   );

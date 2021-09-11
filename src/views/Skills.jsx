@@ -194,7 +194,7 @@ const Skills = () => {
         }}
       />
       <ContentWrapper>
-        <Title strings={["Technologies I already used"]} typeSpeed={40} />
+        <Title strings={["Technologies I already used:"]} typeSpeed={40} />
         <Content>
           <IconAnimation whileHover={{ scale: 1.1 }}>
             <StyledHtmlIcon icon="html_64" />

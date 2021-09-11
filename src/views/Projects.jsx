@@ -10,14 +10,10 @@ const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.darkBlue};
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   flex-direction: column;
   width: 100%;
   height: 100%;
-
-  @media (min-width: 800px) {
-    justify-content: center;
-  }
 `;
 
 const StyledParticles = styled(Particles)`
@@ -27,6 +23,10 @@ const StyledParticles = styled(Particles)`
 
 const ContentWrapper = styled.div`
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 const Title = styled(Typed)`
@@ -43,7 +43,7 @@ const Title = styled(Typed)`
 const ProjectWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 12px;
+  margin-top: 8px;
 
   @media (min-width: 800px) {
     flex-direction: row;
@@ -53,80 +53,96 @@ const ProjectWrapper = styled.div`
 const ProjectTitle = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-family: sans-serif;
-  font-size: ${({ theme }) => theme.fontSize.xl};
+  font-size: ${({ theme }) => theme.fontSize.l};
   font-weight: bold;
-  margin: 8px;
+  margin: 4px;
 
   @media (min-width: 800px) {
-    font-size: ${({ theme }) => theme.fontSize.l};
+    font-size: ${({ theme }) => theme.fontSize.xl};
+    margin: 8px;
   }
 `;
 
 const ProjectContent = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-family: sans-serif;
-  font-size: ${({ theme }) => theme.fontSize.m};
+  font-size: ${({ theme }) => theme.fontSize.s};
   line-height: 1.2;
-  margin: 16px 8px;
+  margin: 4px;
 
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.m};
+    margin: 16px 8px;
   }
 `;
 
-const IconWrapper = styled.div``;
+const IconWrapper = styled.div`
+  @media (min-width: 800px) {
+    margin: 4px;
+  }
+`;
 
 const StyledHtmlIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.html};
-  margin: 8px;
+  margin: 4px;
   width: 48px;
   height: 48px;
 `;
 
 const StyledCssIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.css};
-  margin: 8px;
+  margin: 4px;
   width: 48px;
   height: 48px;
 `;
 
 const StyledJsIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.js};
-  margin: 8px;
+  margin: 4px;
   width: 48px;
   height: 48px;
 `;
 
 const StyledReactIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.react};
-  margin: 8px;
+  margin: 4px;
   width: 48px;
   height: 48px;
 `;
 
 const StyledReduxIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.redux};
-  margin: 8px;
+  margin: 4px;
   width: 48px;
   height: 48px;
 `;
 
 const StyledDatocmsIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.datoCMS};
-  margin: 8px;
+  margin: 4px;
   width: 48px;
   height: 48px;
 `;
 
 const ButtonWrapper = styled.div`
   display: flex;
-  grid-gap: 4px;
   margin: 4px;
+`;
+
+const StyledButton = styled(Button)`
+  font-size: ${({ theme }) => theme.fontSize.s};
+  font-weight: bold;
+  margin: 8px 2px;
+  padding: 2px;
+
+  @media (min-width: 800px) {
+    margin: 16px 2px;
+    padding: 4px;
+  }
 `;
 
 const StyledGithub = styled(Icon)`
   color: ${({ theme }) => theme.colors.darkGrey};
-  margin: 0 2px;
   width: 24px;
   height: 24px;
 `;
@@ -222,9 +238,8 @@ const Contact = () => {
           <ProjectCard>
             <ProjectTitle>Cryptorate</ProjectTitle>
             <ProjectContent>
-              My first React application. Cryptorate comnnects with external API
-              - DatoCMS. Cryptorate has pagination, shows the data and is fully
-              responsive.
+              My first React application. Cryptorate connects with external API
+              - DatoCMS, has pagination and is fully responsive.
             </ProjectContent>
             <IconWrapper>
               <StyledHtmlIcon icon="html_24" />
@@ -234,18 +249,18 @@ const Contact = () => {
               <StyledDatocmsIcon icon="datocms_24" />
             </IconWrapper>
             <ButtonWrapper>
-              <Button>
+              <StyledButton>
                 <StyledGithub icon="github_24" />
                 Check out code
-              </Button>
-              <Button>Try it out</Button>
+              </StyledButton>
+              <StyledButton>Try it out</StyledButton>
             </ButtonWrapper>
           </ProjectCard>
           <ProjectCard>
             <ProjectTitle>TODO-List</ProjectTitle>
             <ProjectContent>
               Clone of Google Keep, simple TODO List made with React,
-              React-Redux and Redux-Saga.
+              React-Redux and Redux-Saga. It connects with Mongo-DB.
             </ProjectContent>
             <IconWrapper>
               <StyledHtmlIcon icon="html_24" />
@@ -255,31 +270,32 @@ const Contact = () => {
               <StyledReduxIcon icon="redux_24" />
             </IconWrapper>
             <ButtonWrapper>
-              <Button>
+              <StyledButton>
                 <StyledGithub icon="github_24" />
                 Check out code
-              </Button>
-              <Button>Try it out</Button>
+              </StyledButton>
+              <StyledButton>Try it out</StyledButton>
             </ButtonWrapper>
           </ProjectCard>
           <ProjectCard>
-            <ProjectTitle>tic-tac-toe</ProjectTitle>
+            <ProjectTitle>Tic-tac-toe</ProjectTitle>
             <ProjectContent>
-              Tic-tac-toe game with two game modes single player (vs Ai) and
-              multiplayer vs other player (socket.io).
+              Tic-tac-toe is a game with two game modes single player (vs Ai)
+              and multiplayer vs other player (socket.io).
             </ProjectContent>
             <IconWrapper>
               <StyledHtmlIcon icon="html_24" />
               <StyledCssIcon icon="css_24" />
               <StyledJsIcon icon="js_24" />
               <StyledReactIcon icon="react_24" />
+              <StyledReduxIcon icon="redux_24" />
             </IconWrapper>
             <ButtonWrapper>
-              <Button>
+              <StyledButton>
                 <StyledGithub icon="github_24" />
                 Check out code
-              </Button>
-              <Button>Try it out</Button>
+              </StyledButton>
+              <StyledButton>Try it out</StyledButton>
             </ButtonWrapper>
           </ProjectCard>
         </ProjectWrapper>

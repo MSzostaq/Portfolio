@@ -10,7 +10,6 @@ const Button = styled(motion.button)`
   justify-content: center;
   font-size: ${({ theme }) => theme.fontSize.m};
   font-weight: bold;
-  margin: 8px 0;
   padding: 8px;
 `;
 

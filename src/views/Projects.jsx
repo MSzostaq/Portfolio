@@ -136,8 +136,8 @@ const StyledButton = styled(Button)`
   padding: 2px;
 
   @media (min-width: 800px) {
-    margin: 16px 2px;
-    padding: 4px;
+    margin: 16px 4px;
+    padding: 8px;
   }
 `;
 
@@ -147,7 +147,36 @@ const StyledGithub = styled(Icon)`
   height: 24px;
 `;
 
+const StyledButtonText = styled.p`
+  color: ${({ theme }) => theme.colors.darkGrey};
+  padding: 0 4px;
+`;
+
 const Contact = () => {
+  function onCryptorateGithubButtonClick() {
+    window.open("https://github.com/MSzostaq/CryptoRate");
+  }
+
+  function onCryptorateDeployButtonClick() {
+    window.open("https://cryptorate-app.herokuapp.com/dashboard#/");
+  }
+
+  function onTodoListGithubButtonClick() {
+    window.open("https://github.com/MSzostaq/TODO-List");
+  }
+
+  function onTodoListDeployButtonClick() {
+    window.open("https://ms-todo-list.herokuapp.com/#/");
+  }
+
+  function onTicTacToeGithubButtonClick() {
+    window.open("https://github.com/MSzostaq/tic-tac-toe");
+  }
+
+  function onTicTacToeDeployButtonClick() {
+    window.open("https://github.com/MSzostaq/tic-tac-toe");
+  }
+
   return (
     <Wrapper id="projects">
       <StyledParticles
@@ -251,9 +280,13 @@ const Contact = () => {
             <ButtonWrapper>
               <StyledButton>
                 <StyledGithub icon="github_24" />
-                Check out code
+                <StyledButtonText onClick={onCryptorateGithubButtonClick}>
+                  Check out code
+                </StyledButtonText>
               </StyledButton>
-              <StyledButton>Try it out</StyledButton>
+              <StyledButton onClick={onCryptorateDeployButtonClick}>
+                Try it out
+              </StyledButton>
             </ButtonWrapper>
           </ProjectCard>
           <ProjectCard>
@@ -272,9 +305,13 @@ const Contact = () => {
             <ButtonWrapper>
               <StyledButton>
                 <StyledGithub icon="github_24" />
-                Check out code
+                <StyledButtonText onClick={onTodoListGithubButtonClick}>
+                  Check out code
+                </StyledButtonText>
               </StyledButton>
-              <StyledButton>Try it out</StyledButton>
+              <StyledButton onClick={onTodoListDeployButtonClick}>
+                Try it out
+              </StyledButton>
             </ButtonWrapper>
           </ProjectCard>
           <ProjectCard>
@@ -293,9 +330,13 @@ const Contact = () => {
             <ButtonWrapper>
               <StyledButton>
                 <StyledGithub icon="github_24" />
-                Check out code
+                <StyledButtonText onClick={onTicTacToeGithubButtonClick}>
+                  Check out code
+                </StyledButtonText>
               </StyledButton>
-              <StyledButton>Try it out</StyledButton>
+              <StyledButton onClick={onTicTacToeDeployButtonClick}>
+                Try it out
+              </StyledButton>
             </ButtonWrapper>
           </ProjectCard>
         </ProjectWrapper>

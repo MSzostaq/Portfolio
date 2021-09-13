@@ -26,6 +26,8 @@ const Title = styled.p`
 
 const Content = styled.ul`
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 8px;
 `;
 
@@ -35,6 +37,7 @@ const IconAnimation = styled(motion.div)`
 
 const StyledGithubIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.lightGrey};
+  cursor: pointer;
   margin: 8px;
   width: 64px;
   height: 64px;
@@ -42,25 +45,34 @@ const StyledGithubIcon = styled(Icon)`
 
 const StyledLinkedInIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.linkedIn};
+  cursor: pointer;
   margin: 8px;
   width: 64px;
   height: 64px;
 `;
 
 const Contact = () => {
+  function onAtIconClick() {
+    window.open("mailto:maciek.szostak55@gmail.com");
+  }
+
+  function onLinkedInIconClick() {
+    window.open("https://www.linkedin.com/in/maciej-szostak-2910a9219/");
+  }
+
   return (
     <Wrapper id="contact">
       <BackgroundParticles />
       <ContentWrapper>
         <Title>Contact me. Enjoy!</Title>
         <Content>
-          <IconAnimation whileHover={{ scale: 1.1 }}>
+          <IconAnimation onClick={onAtIconClick} whileHover={{ scale: 1.1 }}>
             <StyledGithubIcon icon="at" />
           </IconAnimation>
-          <IconAnimation whileHover={{ scale: 1.1 }}>
-            <StyledGithubIcon icon="github_64" />
-          </IconAnimation>
-          <IconAnimation whileHover={{ scale: 1.1 }}>
+          <IconAnimation
+            onClick={onLinkedInIconClick}
+            whileHover={{ scale: 1.1 }}
+          >
             <StyledLinkedInIcon icon="linkedin_64" />
           </IconAnimation>
         </Content>

@@ -3,14 +3,17 @@ import styled from "styled-components";
 import Toggle from "components/Toggle";
 
 const StyledNavbar = styled.div`
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  margin: 8px 2px;
+  z-index: 999;
+  width: 100%;
+  height: 56px;
 
   .active {
-    background-color: rgba(255, 204, 0, 0.2);
+    background-color: rgba(211, 211, 211, 0.2);
     border-radius: 4px;
   }
 `;
@@ -19,7 +22,7 @@ const LinkWrapper = styled.ul``;
 
 const StyledLink = styled(Link)`
   background-color: transparent;
-  color: ${({ theme }) => theme.colors.yellow};
+  color: ${({ theme }) => theme.colors.white};
   cursor: pointer;
   font-size: ${({ theme }) => theme.fontSize.m};
   font-weight: bold;

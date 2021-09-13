@@ -132,9 +132,9 @@ const Skills = () => {
           </IconAnimation>
         </Content>
         <SecondaryTitle>
-          Languages: english (B2 level), polish (native), Bachelor of
-          Engineering
+          Languages: english (B2 level), polish (native)
         </SecondaryTitle>
+        <SecondaryTitle>Bachelor of Engineering</SecondaryTitle>
       </ContentWrapper>
     </Wrapper>
   );

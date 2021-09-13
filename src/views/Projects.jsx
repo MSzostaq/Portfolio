@@ -28,6 +28,7 @@ const Title = styled.p`
   font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: bold;
+  margin-bottom: 16px;
 
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.xxl};
@@ -66,7 +67,7 @@ const ProjectContent = styled.p`
 
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.m};
-    margin: 16px 8px;
+    margin: 8px;
   }
 `;
 
@@ -78,42 +79,42 @@ const IconWrapper = styled.div`
 
 const StyledHtmlIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.html};
-  margin: 4px;
+  margin: 6px;
   width: 48px;
   height: 48px;
 `;
 
 const StyledCssIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.css};
-  margin: 4px;
+  margin: 6px;
   width: 48px;
   height: 48px;
 `;
 
 const StyledJsIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.js};
-  margin: 4px;
+  margin: 6px;
   width: 48px;
   height: 48px;
 `;
 
 const StyledReactIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.react};
-  margin: 4px;
+  margin: 6px;
   width: 48px;
   height: 48px;
 `;
 
 const StyledReduxIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.redux};
-  margin: 4px;
+  margin: 6px;
   width: 48px;
   height: 48px;
 `;
 
 const StyledDatocmsIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.datoCMS};
-  margin: 4px;
+  margin: 6px;
   width: 48px;
   height: 48px;
 `;
@@ -126,12 +127,11 @@ const ButtonWrapper = styled.div`
 const StyledButton = styled(Button)`
   font-size: ${({ theme }) => theme.fontSize.s};
   font-weight: bold;
-  margin: 8px 2px;
+  margin: 4px;
   padding: 2px;
 
   @media (min-width: 800px) {
-    margin: 16px 4px;
-    padding: 8px;
+    padding: 6px;
   }
 `;
 
@@ -206,7 +206,7 @@ const Contact = () => {
             <ProjectTitle>TODO-List</ProjectTitle>
             <ProjectContent>
               Clone of Google Keep, simple TODO List made with React,
-              React-Redux and Redux-Saga. It connects with Mongo-DB.
+              React-Redux and Redux-Saga. It has most of Google Keep features.
             </ProjectContent>
             <IconWrapper>
               <StyledHtmlIcon icon="html_24" />
@@ -219,19 +219,19 @@ const Contact = () => {
               <StyledButton>
                 <StyledGithub icon="github_24" />
                 <StyledButtonText onClick={onTodoListGithubButtonClick}>
-                  Check out code
+                  Code
                 </StyledButtonText>
               </StyledButton>
               <StyledButton onClick={onTodoListDeployButtonClick}>
-                Try it out
+                Demo
               </StyledButton>
             </ButtonWrapper>
           </ProjectCard>
           <ProjectCard>
             <ProjectTitle>Tic-tac-toe</ProjectTitle>
             <ProjectContent>
-              Tic-tac-toe is a game with two game modes single player (vs Ai)
-              and multiplayer vs other player (socket.io).
+              Tic-tac-toe is a simple game with three game modes: local, vs
+              computer and multiplayer (socket.io).
             </ProjectContent>
             <IconWrapper>
               <StyledHtmlIcon icon="html_24" />
@@ -244,11 +244,11 @@ const Contact = () => {
               <StyledButton>
                 <StyledGithub icon="github_24" />
                 <StyledButtonText onClick={onTicTacToeGithubButtonClick}>
-                  Check out code
+                  Code
                 </StyledButtonText>
               </StyledButton>
               <StyledButton onClick={onTicTacToeDeployButtonClick}>
-                Try it out
+                Demo
               </StyledButton>
             </ButtonWrapper>
           </ProjectCard>

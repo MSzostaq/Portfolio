@@ -8,8 +8,8 @@ const ProjectCard = styled.div`
   height: 26vh;
 
   @media (min-width: 800px) {
-    width: 28vw;
-    height: 40vh;
+    width: 26vw;
+    height: 36vh;
     margin: 8px;
   }
 `;

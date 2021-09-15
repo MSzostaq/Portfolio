@@ -5,6 +5,7 @@ import Contact from "views/Contact";
 import Projects from "views/Projects";
 import Skills from "views/Skills";
 import Welcome from "views/Welcome";
+import CvButton from "components/CvButton";
 import Navbar from "components/Navbar";
 
 const Wrapper = styled.div`
@@ -20,6 +21,7 @@ const App = () => {
         <Skills />
         <Projects />
         <Contact />
+        <CvButton />
       </ThemeProvider>
     </Wrapper>
   );

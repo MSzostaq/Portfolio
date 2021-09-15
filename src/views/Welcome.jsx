@@ -15,15 +15,12 @@ const Wrapper = styled.div`
 
 const WelcomeWrapper = styled.div`
   background-color: transparent;
-  border-radius: 8px;
-  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   position: absolute;
   width: 80%;
-
-  @media (min-width: 800px) {
-    padding: 64px;
-    width: 50%;
-  }
 `;
 
 const Title = styled(Typed)`
@@ -38,7 +35,6 @@ const SecondaryTitle = styled(Typed)`
   font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: bold;
-  margin-top: 24px;
 `;
 
 const Welcome = () => {
@@ -47,9 +43,15 @@ const Welcome = () => {
       <BackgroundParticles />
       <WelcomeWrapper>
         <Title
-          strings={["Hello there! I'm Maciek", "your future frontend dev"]}
+          strings={[`Hello there! I'm Maciek`]}
+          smartBackspace={true}
           typeSpeed={40}
-          fadeOut={true}
+        />
+        <br />
+        <SecondaryTitle
+          strings={[`your future frontend dev`]}
+          startDelay={4000}
+          typeSpeed={40}
         />
       </WelcomeWrapper>
     </Wrapper>

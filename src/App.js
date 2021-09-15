@@ -5,7 +5,7 @@ import Contact from "views/Contact";
 import Projects from "views/Projects";
 import Skills from "views/Skills";
 import Welcome from "views/Welcome";
-import CvButton from "components/CvButton";
+import DownloadCvButton from "components/DownloadCvButton";
 import Navbar from "components/Navbar";
 
 const Wrapper = styled.div`
@@ -21,7 +21,7 @@ const App = () => {
         <Skills />
         <Projects />
         <Contact />
-        <CvButton />
+        <DownloadCvButton />
       </ThemeProvider>
     </Wrapper>
   );

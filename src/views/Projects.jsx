@@ -28,10 +28,11 @@ const Title = styled.p`
   font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-top: 48px;
 
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.xxl};
+    margin-top: auto;
   }
 `;
 
@@ -230,8 +231,8 @@ const Contact = () => {
           <ProjectCard>
             <ProjectTitle>Tic-tac-toe</ProjectTitle>
             <ProjectContent>
-              Tic-tac-toe is a simple game with three game modes: local, vs
-              computer and multiplayer (socket.io).
+              Tic-tac-toe is a simple game with three game modes: local (1 v 1),
+              vs computer (Ai) and multiplayer (socket.io).
             </ProjectContent>
             <IconWrapper>
               <StyledHtmlIcon icon="html_24" />

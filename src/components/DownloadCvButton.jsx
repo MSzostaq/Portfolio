@@ -2,12 +2,13 @@ import styled from "styled-components";
 import Icon from "components/Icon";
 
 const Button = styled.button`
-  background-color: ${({ theme }) => theme.colors.lightGrey};
-  border-radius: 32px;
+  background-color: ${({ theme }) => theme.colors.silver};
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 2px;
   position: fixed;
   right: 16px;
   bottom: 16px;
@@ -23,7 +24,7 @@ const Button = styled.button`
 const StyledText = styled.p`
   color: ${({ theme }) => theme.colors.grey};
   font-size: ${({ theme }) => theme.fontSize.s};
-  padding: 2px;
+  margin: 2px;
 `;
 
 const StyledIcon = styled(Icon)`
@@ -39,8 +40,8 @@ const StyledIcon = styled(Icon)`
 
 const DownloadCvButton = () => {
   return (
-    <Button>
-      <StyledText>CV</StyledText>
+    <Button to="/desktop/avatar.png" target="_blank">
+      <StyledText>cv</StyledText>
       <StyledIcon icon="download_48" />
     </Button>
   );

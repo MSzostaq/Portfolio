@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import BackgroundParticles from "components/BackgroundParticles";
+import pl from "constants/pl.png";
+import uk from "constants/uk.png";
 import Icon from "components/Icon";
 
 const Wrapper = styled.div`
@@ -96,10 +98,19 @@ const StyledDatocmsIcon = styled(Icon)`
 
 const SecondaryTitle = styled.p`
   color: ${({ theme }) => theme.colors.white};
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.l};
   margin: 12px 4px;
   text-align: center;
+`;
+
+const StyledImage = styled.img`
+  margin: 0 8px;
+  width: 42px;
+  height: 42px;
 `;
 
 const Skills = () => {
@@ -132,7 +143,8 @@ const Skills = () => {
           </IconAnimation>
         </Content>
         <SecondaryTitle>
-          Languages: english (B2 level), polish (native)
+          Languages: <StyledImage src={uk} /> (B2 level),
+          <StyledImage src={pl} /> (native)
         </SecondaryTitle>
         <SecondaryTitle>Bachelor of Engineering</SecondaryTitle>
       </ContentWrapper>

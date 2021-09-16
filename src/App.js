@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { theme } from "constants/theme";
 import Contact from "views/Contact";
@@ -13,6 +13,10 @@ const Wrapper = styled.div`
 `;
 
 const App = () => {
+  useEffect(() => {
+    document.title = "Portfolio Maciej Szostak";
+  });
+
   return (
     <Wrapper>
       <ThemeProvider theme={theme}>

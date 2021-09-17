@@ -2,7 +2,8 @@ import styled from "styled-components";
 import Icon from "components/Icon";
 
 const Button = styled.button`
-  background-color: ${({ theme }) => theme.colors.silver};
+  background-color: ${({ theme }) => theme.colors.white};
+  box-shadow: 0px 0px 8px 0px ${({ theme }) => theme.colors.darkGrey};
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -24,17 +25,17 @@ const Button = styled.button`
 const StyledText = styled.p`
   color: ${({ theme }) => theme.colors.grey};
   font-size: ${({ theme }) => theme.fontSize.s};
-  margin: 2px;
 `;
 
 const StyledIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.grey};
+  padding: 4px;
   width: 24px;
   height: 24px;
 
   @media (min-width: 800px) {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
   }
 `;
 

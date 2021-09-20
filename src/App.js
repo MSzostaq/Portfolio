@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 
 const App = () => {
   useEffect(() => {
-    document.title = "Portfolio Maciej Szostak";
+    document.title = "Maciej Szostak";
   });
 
   return (

@@ -123,6 +123,10 @@ const StyledDatocmsIcon = styled(Icon)`
 const ButtonWrapper = styled.div`
   display: flex;
   margin: 4px;
+
+  @media (min-width: 800px) {
+    margin: 24px 4px;
+  }
 `;
 
 const StyledButton = styled(Button)`

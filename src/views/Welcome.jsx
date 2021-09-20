@@ -42,15 +42,12 @@ const Welcome = () => {
     <Wrapper id="welcome">
       <BackgroundParticles />
       <WelcomeWrapper>
-        <Title
-          strings={[`Hello there! I'm Maciek`]}
-          smartBackspace={true}
-          typeSpeed={40}
-        />
+        <Title strings={[`Hello there! I'm Maciek`]} typeSpeed={40} />
         <br />
         <SecondaryTitle
-          strings={[`your future frontend dev`]}
+          strings={[`// your future frontend dev`]}
           startDelay={4000}
+          showCursor={false}
           typeSpeed={40}
         />
       </WelcomeWrapper>

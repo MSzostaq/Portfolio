@@ -1,6 +1,8 @@
 import { Link } from "react-scroll";
 import styled from "styled-components";
-import Toggle from "components/Toggle";
+import { motion } from "framer-motion";
+import pl from "constants/pl.png";
+import uk from "constants/uk.png";
 
 const StyledNavbar = styled.div`
   background-color: rgba(0, 0, 0, 0.3);
@@ -33,6 +35,15 @@ const StyledLink = styled(Link)`
     font-size: ${({ theme }) => theme.fontSize.l};
     margin: 6px 2px;
   }
+`;
+
+const IconWarpper = styled.div``;
+
+const StyledImage = styled(motion.img)`
+  cursor: pointer;
+  margin: 0 8px;
+  width: 42px;
+  height: 42px;
 `;
 
 const Navbar = () => {
@@ -80,7 +91,10 @@ const Navbar = () => {
           Contact
         </StyledLink>
       </LinkWrapper>
-      <Toggle />
+      <IconWarpper>
+        <StyledImage src={uk} whileHover={{ scale: 1.1 }} />
+        <StyledImage src={pl} whileHover={{ scale: 1.1 }} />
+      </IconWarpper>
     </StyledNavbar>
   );
 };

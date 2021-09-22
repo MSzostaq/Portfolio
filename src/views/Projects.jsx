@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import BackgroundParticles from "components/BackgroundParticles";
-import Button from "components/Button";
 import Icon from "components/Icon";
 import ProjectCard from "components/ProjectCard";
 
@@ -129,7 +129,13 @@ const ButtonWrapper = styled.div`
   }
 `;
 
-const StyledButton = styled(Button)`
+const StyledButton = styled(motion.button)`
+  background-color: rgba(0, 0, 100, 0.7);
+  border-radius: 4px;
+  color: ${({ theme }) => theme.colors.lightGrey};
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: ${({ theme }) => theme.fontSize.s};
   font-weight: bold;
   margin: 4px;
@@ -141,13 +147,13 @@ const StyledButton = styled(Button)`
 `;
 
 const StyledGithub = styled(Icon)`
-  color: ${({ theme }) => theme.colors.darkGrey};
+  color: ${({ theme }) => theme.colors.silver};
   width: 24px;
   height: 24px;
 `;
 
 const StyledButtonText = styled.p`
-  color: ${({ theme }) => theme.colors.darkGrey};
+  color: ${({ theme }) => theme.colors.lightGrey};
   padding: 0 4px;
 `;
 
@@ -196,13 +202,25 @@ const Contact = () => {
               <StyledDatocmsIcon icon="datocms_24" />
             </IconWrapper>
             <ButtonWrapper>
-              <StyledButton>
+              <StyledButton
+                onClick={onCryptorateGithubButtonClick}
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0px 0px 2px rgb(255,255,255",
+                  textShadow: "0px 0px 2px rgb(255,255,255",
+                }}
+              >
                 <StyledGithub icon="github_24" />
-                <StyledButtonText onClick={onCryptorateGithubButtonClick}>
-                  Code
-                </StyledButtonText>
+                <StyledButtonText>Code</StyledButtonText>
               </StyledButton>
-              <StyledButton onClick={onCryptorateDeployButtonClick}>
+              <StyledButton
+                onClick={onCryptorateDeployButtonClick}
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0px 0px 2px rgb(255,255,255",
+                  textShadow: "0px 0px 2px rgb(255,255,255",
+                }}
+              >
                 Demo
               </StyledButton>
             </ButtonWrapper>
@@ -221,13 +239,25 @@ const Contact = () => {
               <StyledReduxIcon icon="redux_24" />
             </IconWrapper>
             <ButtonWrapper>
-              <StyledButton>
+              <StyledButton
+                onClick={onTodoListGithubButtonClick}
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0px 0px 2px rgb(255,255,255",
+                  textShadow: "0px 0px 2px rgb(255,255,255",
+                }}
+              >
                 <StyledGithub icon="github_24" />
-                <StyledButtonText onClick={onTodoListGithubButtonClick}>
-                  Code
-                </StyledButtonText>
+                <StyledButtonText>Code</StyledButtonText>
               </StyledButton>
-              <StyledButton onClick={onTodoListDeployButtonClick}>
+              <StyledButton
+                onClick={onTodoListDeployButtonClick}
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0px 0px 2px rgb(255,255,255",
+                  textShadow: "0px 0px 2px rgb(255,255,255",
+                }}
+              >
                 Demo
               </StyledButton>
             </ButtonWrapper>
@@ -246,13 +276,25 @@ const Contact = () => {
               <StyledReduxIcon icon="redux_24" />
             </IconWrapper>
             <ButtonWrapper>
-              <StyledButton>
+              <StyledButton
+                onClick={onTicTacToeGithubButtonClick}
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0px 0px 2px rgb(255,255,255",
+                  textShadow: "0px 0px 2px rgb(255,255,255",
+                }}
+              >
                 <StyledGithub icon="github_24" />
-                <StyledButtonText onClick={onTicTacToeGithubButtonClick}>
-                  Code
-                </StyledButtonText>
+                <StyledButtonText>Code</StyledButtonText>
               </StyledButton>
-              <StyledButton onClick={onTicTacToeDeployButtonClick}>
+              <StyledButton
+                onClick={onTicTacToeDeployButtonClick}
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0px 0px 2px rgb(255,255,255",
+                  textShadow: "0px 0px 2px rgb(255,255,255",
+                }}
+              >
                 Demo
               </StyledButton>
             </ButtonWrapper>

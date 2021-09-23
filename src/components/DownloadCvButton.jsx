@@ -40,8 +40,14 @@ const StyledIcon = styled(Icon)`
 `;
 
 const DownloadCvButton = () => {
+  function onCvButtonClick() {
+    window.open(
+      "https://drive.google.com/file/d/1gvvein8SV63lTZZ2opDyuIhdzfschajs/view"
+    );
+  }
+
   return (
-    <Button to="/desktop/avatar.png" target="_blank">
+    <Button onClick={onCvButtonClick}>
       <StyledText>cv</StyledText>
       <StyledIcon icon="download_48" />
     </Button>

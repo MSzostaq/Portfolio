@@ -21,20 +21,29 @@ const WelcomeWrapper = styled.div`
   flex-direction: column;
   position: absolute;
   width: 80%;
+  height: 100%;
 `;
 
 const Title = styled(Typed)`
   color: ${({ theme }) => theme.colors.white};
   font-family: sans-serif;
-  font-size: ${({ theme }) => theme.fontSize.xxl};
+  font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: bold;
+
+  @media (min-width: 800px) {
+    font-size: ${({ theme }) => theme.fontSize.xxl};
+  }
 `;
 
 const SecondaryTitle = styled(Typed)`
   color: ${({ theme }) => theme.colors.white};
   font-family: sans-serif;
-  font-size: ${({ theme }) => theme.fontSize.xl};
+  font-size: ${({ theme }) => theme.fontSize.m};
   font-weight: bold;
+
+  @media (min-width: 800px) {
+    font-size: ${({ theme }) => theme.fontSize.l};
+  }
 `;
 
 const Welcome = () => {

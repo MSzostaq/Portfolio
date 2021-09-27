@@ -19,8 +19,9 @@ const WelcomeWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  overflow-wrap: break-word;
   position: absolute;
-  width: 80%;
+  width: 100%;
   height: 100%;
 `;
 

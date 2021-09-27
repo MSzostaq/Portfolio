@@ -195,3 +195,9 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #c0c0c0;
 }
+
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
+body {
+  font-family: "Josefin Sans", cursive;
+}

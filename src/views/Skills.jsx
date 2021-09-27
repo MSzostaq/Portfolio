@@ -26,7 +26,6 @@ const ContentWrapper = styled.div`
 
 const Title = styled.p`
   color: ${({ theme }) => theme.colors.white};
-  font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.l};
   margin: 12px 4px;
 
@@ -148,7 +147,6 @@ const SecondaryTitle = styled.p`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.m};
   margin: 12px 4px;
   text-align: center;

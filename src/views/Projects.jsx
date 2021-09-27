@@ -25,7 +25,6 @@ const ContentWrapper = styled.div`
 
 const Title = styled.p`
   color: ${({ theme }) => theme.colors.white};
-  font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: bold;
   margin-top: 48px;
@@ -48,7 +47,6 @@ const ProjectWrapper = styled.div`
 
 const ProjectTitle = styled.p`
   color: ${({ theme }) => theme.colors.white};
-  font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.l};
   font-weight: bold;
   margin: 4px;
@@ -61,7 +59,6 @@ const ProjectTitle = styled.p`
 
 const ProjectContent = styled.p`
   color: ${({ theme }) => theme.colors.white};
-  font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.s};
   line-height: 1.2;
   margin: 4px;

@@ -27,7 +27,6 @@ const WelcomeWrapper = styled.div`
 
 const Title = styled(Typed)`
   color: ${({ theme }) => theme.colors.white};
-  font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: bold;
 
@@ -38,7 +37,6 @@ const Title = styled(Typed)`
 
 const SecondaryTitle = styled(Typed)`
   color: ${({ theme }) => theme.colors.white};
-  font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.m};
   font-weight: bold;
 

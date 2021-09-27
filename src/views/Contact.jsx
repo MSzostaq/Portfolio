@@ -22,6 +22,10 @@ const Title = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-family: sans-serif;
   font-size: ${({ theme }) => theme.fontSize.xl};
+
+  @media (min-width: 800px) {
+    font-size: ${({ theme }) => theme.fontSize.xxl};
+  }
 `;
 
 const Content = styled.ul`
@@ -38,17 +42,29 @@ const IconAnimation = styled(motion.div)`
 const StyledGithubIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.lightGrey};
   cursor: pointer;
-  margin: 8px;
-  width: 64px;
-  height: 64px;
+  margin: 4px;
+  width: 48px;
+  height: 48px;
+
+  @media (min-width: 800px) {
+    margin: 8px;
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 const StyledLinkedInIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.linkedIn};
   cursor: pointer;
-  margin: 8px;
-  width: 64px;
-  height: 64px;
+  margin: 4px;
+  width: 48px;
+  height: 48px;
+
+  @media (min-width: 800px) {
+    margin: 8px;
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 const Contact = () => {

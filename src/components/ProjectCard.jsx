@@ -5,8 +5,8 @@ const ProjectCard = styled.div`
   border-radius: 8px;
   margin: 4px;
   padding: 4px;
-  width: 70vw;
-  height: 27vh;
+  width: 90vw;
+  height: 25vh;
 
   @media (min-width: 800px) {
     width: 26vw;

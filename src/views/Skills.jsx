@@ -27,8 +27,12 @@ const ContentWrapper = styled.div`
 const Title = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-family: sans-serif;
-  font-size: ${({ theme }) => theme.fontSize.xl};
+  font-size: ${({ theme }) => theme.fontSize.l};
   margin: 12px 4px;
+
+  @media (min-width: 800px) {
+    font-size: ${({ theme }) => theme.fontSize.xl};
+  }
 `;
 
 const Content = styled.ul`
@@ -36,10 +40,11 @@ const Content = styled.ul`
   justify-content: center;
   flex-wrap: wrap;
   margin: 8px;
-  width: 80%;
+  width: 100%;
 
   @media (min-width: 800px) {
     flex-wrap: nowrap;
+    width: 80%;
   }
 `;
 
@@ -49,51 +54,93 @@ const IconAnimation = styled(motion.div)`
 
 const StyledHtmlIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.html};
-  margin: 8px;
-  width: 64px;
-  height: 64px;
+  margin: 4px;
+  width: 48px;
+  height: 48px;
+
+  @media (min-width: 800px) {
+    margin: 8px;
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 const StyledCssIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.css};
-  margin: 8px;
-  width: 64px;
-  height: 64px;
+  margin: 4px;
+  width: 48px;
+  height: 48px;
+
+  @media (min-width: 800px) {
+    margin: 8px;
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 const StyledJsIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.js};
-  margin: 8px;
-  width: 64px;
-  height: 64px;
+  margin: 4px;
+  width: 48px;
+  height: 48px;
+
+  @media (min-width: 800px) {
+    margin: 8px;
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 const StyledReactIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.react};
-  margin: 8px;
-  width: 64px;
-  height: 64px;
+  margin: 4px;
+  width: 48px;
+  height: 48px;
+
+  @media (min-width: 800px) {
+    margin: 8px;
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 const StyledReduxtIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.redux};
-  margin: 8px;
-  width: 64px;
-  height: 64px;
+  margin: 4px;
+  width: 48px;
+  height: 48px;
+
+  @media (min-width: 800px) {
+    margin: 8px;
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 const StyledGitIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.git};
-  margin: 8px;
-  width: 64px;
-  height: 64px;
+  margin: 4px;
+  width: 48px;
+  height: 48px;
+
+  @media (min-width: 800px) {
+    margin: 8px;
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 const StyledDatocmsIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.datoCMS};
-  margin: 8px;
-  width: 64px;
-  height: 64px;
+  margin: 4px;
+  width: 48px;
+  height: 48px;
+
+  @media (min-width: 800px) {
+    margin: 8px;
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 const SecondaryTitle = styled.p`
@@ -102,9 +149,13 @@ const SecondaryTitle = styled.p`
   align-items: center;
   justify-content: center;
   font-family: sans-serif;
-  font-size: ${({ theme }) => theme.fontSize.l};
+  font-size: ${({ theme }) => theme.fontSize.m};
   margin: 12px 4px;
   text-align: center;
+
+  @media (min-width: 800px) {
+    font-size: ${({ theme }) => theme.fontSize.l};
+  }
 `;
 
 const StyledImage = styled.img`

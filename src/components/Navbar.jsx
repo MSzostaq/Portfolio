@@ -28,8 +28,8 @@ const StyledLink = styled(Link)`
   cursor: pointer;
   font-size: ${({ theme }) => theme.fontSize.m};
   font-weight: bold;
-  margin: 6px 2px;
-  padding: 4px 8px;
+  margin: 4px 2px;
+  padding: 4px;
 
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.l};

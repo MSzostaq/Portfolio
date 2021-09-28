@@ -27,6 +27,7 @@ const ContentWrapper = styled.div`
 const Title = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-size: ${({ theme }) => theme.fontSize.l};
+  font-weight: bold;
   margin: 12px 4px;
 
   @media (min-width: 800px) {

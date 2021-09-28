@@ -32,6 +32,7 @@ const Title = styled.p`
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.xxl};
     margin-top: auto;
+    margin-bottom: 16px;
   }
 `;
 
@@ -132,26 +133,20 @@ const StyledButton = styled(motion.button)`
   color: ${({ theme }) => theme.colors.lightGrey};
   display: flex;
   align-items: center;
-  justify-content: center;
   font-size: ${({ theme }) => theme.fontSize.s};
   font-weight: bold;
   margin: 4px;
-  padding: 2px;
+  padding: 4px;
 
   @media (min-width: 800px) {
-    padding: 6px;
+    padding: 8px;
   }
 `;
 
 const StyledGithub = styled(Icon)`
   color: ${({ theme }) => theme.colors.silver};
-  width: 24px;
-  height: 24px;
-`;
-
-const StyledButtonText = styled.p`
-  color: ${({ theme }) => theme.colors.lightGrey};
-  padding: 0 4px;
+  width: 20px;
+  height: 20px;
 `;
 
 const Contact = () => {
@@ -200,17 +195,6 @@ const Contact = () => {
             </IconWrapper>
             <ButtonWrapper>
               <StyledButton
-                onClick={onCryptorateGithubButtonClick}
-                whileHover={{
-                  scale: 1.1,
-                  boxShadow: "0px 0px 2px rgb(255,255,255",
-                  textShadow: "0px 0px 2px rgb(255,255,255",
-                }}
-              >
-                <StyledGithub icon="github_24" />
-                <StyledButtonText>Code</StyledButtonText>
-              </StyledButton>
-              <StyledButton
                 onClick={onCryptorateDeployButtonClick}
                 whileHover={{
                   scale: 1.1,
@@ -219,6 +203,16 @@ const Contact = () => {
                 }}
               >
                 Demo
+              </StyledButton>
+              <StyledButton
+                onClick={onCryptorateGithubButtonClick}
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0px 0px 2px rgb(255,255,255",
+                  textShadow: "0px 0px 2px rgb(255,255,255",
+                }}
+              >
+                <StyledGithub icon="github_24" />
               </StyledButton>
             </ButtonWrapper>
           </ProjectCard>
@@ -237,17 +231,6 @@ const Contact = () => {
             </IconWrapper>
             <ButtonWrapper>
               <StyledButton
-                onClick={onTodoListGithubButtonClick}
-                whileHover={{
-                  scale: 1.1,
-                  boxShadow: "0px 0px 2px rgb(255,255,255",
-                  textShadow: "0px 0px 2px rgb(255,255,255",
-                }}
-              >
-                <StyledGithub icon="github_24" />
-                <StyledButtonText>Code</StyledButtonText>
-              </StyledButton>
-              <StyledButton
                 onClick={onTodoListDeployButtonClick}
                 whileHover={{
                   scale: 1.1,
@@ -256,6 +239,16 @@ const Contact = () => {
                 }}
               >
                 Demo
+              </StyledButton>
+              <StyledButton
+                onClick={onTodoListGithubButtonClick}
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0px 0px 2px rgb(255,255,255",
+                  textShadow: "0px 0px 2px rgb(255,255,255",
+                }}
+              >
+                <StyledGithub icon="github_24" />
               </StyledButton>
             </ButtonWrapper>
           </ProjectCard>
@@ -274,17 +267,6 @@ const Contact = () => {
             </IconWrapper>
             <ButtonWrapper>
               <StyledButton
-                onClick={onTicTacToeGithubButtonClick}
-                whileHover={{
-                  scale: 1.1,
-                  boxShadow: "0px 0px 2px rgb(255,255,255",
-                  textShadow: "0px 0px 2px rgb(255,255,255",
-                }}
-              >
-                <StyledGithub icon="github_24" />
-                <StyledButtonText>Code</StyledButtonText>
-              </StyledButton>
-              <StyledButton
                 onClick={onTicTacToeDeployButtonClick}
                 whileHover={{
                   scale: 1.1,
@@ -293,6 +275,16 @@ const Contact = () => {
                 }}
               >
                 Demo
+              </StyledButton>
+              <StyledButton
+                onClick={onTicTacToeGithubButtonClick}
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0px 0px 2px rgb(255,255,255",
+                  textShadow: "0px 0px 2px rgb(255,255,255",
+                }}
+              >
+                <StyledGithub icon="github_24" />
               </StyledButton>
             </ButtonWrapper>
           </ProjectCard>

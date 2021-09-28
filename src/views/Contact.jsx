@@ -21,6 +21,7 @@ const ContentWrapper = styled.div`
 const Title = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-size: ${({ theme }) => theme.fontSize.xl};
+  font-weight: bold;
 
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.xxl};
@@ -38,8 +39,8 @@ const IconAnimation = styled(motion.div)`
   background-color: transparent;
 `;
 
-const StyledGithubIcon = styled(Icon)`
-  color: ${({ theme }) => theme.colors.lightGrey};
+const StyledMailIcon = styled(Icon)`
+  color: ${({ theme }) => theme.colors.silver};
   cursor: pointer;
   margin: 4px;
   width: 48px;
@@ -82,7 +83,7 @@ const Contact = () => {
         <Title>Contact me. Enjoy!</Title>
         <Content>
           <IconAnimation onClick={onAtIconClick} whileHover={{ scale: 1.1 }}>
-            <StyledGithubIcon icon="at" />
+            <StyledMailIcon icon="at" />
           </IconAnimation>
           <IconAnimation
             onClick={onLinkedInIconClick}

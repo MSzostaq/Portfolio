@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import BackgroundParticles from "components/BackgroundParticles";
 import Icon from "components/Icon";
 
@@ -68,6 +69,8 @@ const StyledLinkedInIcon = styled(Icon)`
 `;
 
 const Contact = () => {
+  const { i18n, t } = useTranslation();
+
   function onAtIconClick() {
     window.open("mailto:maciek.szostak55@gmail.com");
   }
@@ -80,7 +83,7 @@ const Contact = () => {
     <Wrapper id="contact">
       <BackgroundParticles />
       <ContentWrapper>
-        <Title>Contact me. Enjoy!</Title>
+        <Title>{t("contact")}</Title>
         <Content>
           <IconAnimation onClick={onAtIconClick} whileHover={{ scale: 1.1 }}>
             <StyledMailIcon icon="at" />

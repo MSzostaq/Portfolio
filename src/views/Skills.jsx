@@ -31,7 +31,7 @@ const Title = styled.p`
   margin: 12px 4px;
 
   @media (min-width: 800px) {
-    font-size: ${({ theme }) => theme.fontSize.xl};
+    font-size: ${({ theme }) => theme.fontSize.xxl};
   }
 `;
 

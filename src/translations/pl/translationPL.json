@@ -1,3 +1,13 @@
 {
+  "welcome": "Cześć, jestem Maciek",
+  "coment": "// przyszły frontend developer",
+  "technologies": "Technologie, które użyłem:",
+  "languages": "Języki:",
+  "en": "poziom B2",
+  "pl": "ojczysty",
+  "degree": "Inżynier",
+  "cryptorate": "Moja pierwsza aplikacja napisana w React. Łączy się ona z zewnętrznym API - DatoCMS, ma paginację i jest w pełni responsywna.",
+  "todo-list": "Klon Google Keep, prosta lista zadań napisana w React, React-Redux i Redux-Saga. Ma większość fukcji oryginalnego Google Keep.",
+  "tic-tac-toe": "Tic-tac-toe jest prostą grą z trzema trybami gry: lokalnym (1 v 1), przeciwko komputerowi (Ai) i multiplayer (socket.io).",
   "contact": "Skontaktuj się ze mną."
 }

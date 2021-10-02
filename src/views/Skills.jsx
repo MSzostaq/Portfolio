@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import BackgroundParticles from "components/BackgroundParticles";
 import pl from "constants/pl.png";
 import uk from "constants/uk.png";
@@ -164,11 +165,13 @@ const StyledImage = styled.img`
 `;
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   return (
     <Wrapper id="about">
       <BackgroundParticles />
       <ContentWrapper>
-        <Title>Technologies I already used:</Title>
+        <Title>{t("technologies")}</Title>
         <Content>
           <IconAnimation whileHover={{ scale: 1.1 }}>
             <StyledHtmlIcon icon="html_64" />
@@ -193,10 +196,10 @@ const Skills = () => {
           </IconAnimation>
         </Content>
         <SecondaryTitle>
-          Languages: <StyledImage src={uk} /> (B2 level),
-          <StyledImage src={pl} /> (native)
+          {t("languages")} <StyledImage src={uk} /> {t("en")}
+          <StyledImage src={pl} /> {t("pl")}
         </SecondaryTitle>
-        <SecondaryTitle>Bachelor of Engineering</SecondaryTitle>
+        <SecondaryTitle>{t("degree")}</SecondaryTitle>
       </ContentWrapper>
     </Wrapper>
   );

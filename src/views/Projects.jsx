@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import BackgroundParticles from "components/BackgroundParticles";
 import Icon from "components/Icon";
 import ProjectCard from "components/ProjectCard";
@@ -150,6 +151,8 @@ const StyledGithub = styled(Icon)`
 `;
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   function onCryptorateGithubButtonClick() {
     window.open("https://github.com/MSzostaq/CryptoRate");
   }
@@ -178,14 +181,11 @@ const Contact = () => {
     <Wrapper id="projects">
       <BackgroundParticles />
       <ContentWrapper>
-        <Title>Check out my projects</Title>
+        <Title>{t("project-title")}</Title>
         <ProjectWrapper>
           <ProjectCard>
             <ProjectTitle>Cryptorate</ProjectTitle>
-            <ProjectContent>
-              My first React application. Cryptorate connects with external API
-              - DatoCMS, has pagination and is fully responsive.
-            </ProjectContent>
+            <ProjectContent>{t("cryptorate")}</ProjectContent>
             <IconWrapper>
               <StyledHtmlIcon icon="html_24" />
               <StyledCssIcon icon="css_24" />
@@ -218,10 +218,7 @@ const Contact = () => {
           </ProjectCard>
           <ProjectCard>
             <ProjectTitle>TODO-List</ProjectTitle>
-            <ProjectContent>
-              Clone of Google Keep, simple TODO List made with React,
-              React-Redux and Redux-Saga. It has most of Google Keep features.
-            </ProjectContent>
+            <ProjectContent>{t("todo-list")}</ProjectContent>
             <IconWrapper>
               <StyledHtmlIcon icon="html_24" />
               <StyledCssIcon icon="css_24" />
@@ -254,10 +251,7 @@ const Contact = () => {
           </ProjectCard>
           <ProjectCard>
             <ProjectTitle>Tic-tac-toe</ProjectTitle>
-            <ProjectContent>
-              Tic-tac-toe is a simple game with three game modes: local (1 v 1),
-              vs computer (Ai) and multiplayer (socket.io).
-            </ProjectContent>
+            <ProjectContent>{t("tic-tac-toe")}</ProjectContent>
             <IconWrapper>
               <StyledHtmlIcon icon="html_24" />
               <StyledCssIcon icon="css_24" />

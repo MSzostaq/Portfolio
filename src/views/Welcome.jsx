@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Typed from "react-typed";
+import { useTranslation } from "react-i18next";
 import BackgroundParticles from "components/BackgroundParticles";
 
 const Wrapper = styled.div`
@@ -46,14 +47,16 @@ const SecondaryTitle = styled(Typed)`
 `;
 
 const Welcome = () => {
+  const { t } = useTranslation();
+
   return (
     <Wrapper id="welcome">
       <BackgroundParticles />
       <WelcomeWrapper>
-        <Title strings={[`Hello there! I'm Maciek`]} typeSpeed={40} />
+        <Title strings={[t("welcome")]} typeSpeed={40} />
         <br />
         <SecondaryTitle
-          strings={[`// your future frontend dev`]}
+          strings={[t("coment")]}
           startDelay={4000}
           showCursor={false}
           typeSpeed={40}

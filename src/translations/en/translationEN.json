@@ -1,4 +1,8 @@
 {
+  "nav-welcome": "Welcome",
+  "nav-skills": "Skills",
+  "nav-projects": "Projects",
+  "nav-contact": "Contact",
   "welcome": "Hello there! I'm Maciek",
   "coment": "// future frontend dev",
   "technologies": "Technologies I already used:",

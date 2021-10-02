@@ -1,3 +1,13 @@
 {
+  "welcome": "Hello there! I'm Maciek",
+  "coment": "// future frontend dev",
+  "technologies": "Technologies I already used:",
+  "languages": "Languages:",
+  "en": "B2 level",
+  "pl": "native",
+  "degree": "Bachelor of Engineering",
+  "cryptorate": "My first React application. Cryptorate connects with external API - DatoCMS, has pagination and is fully responsive.",
+  "todo-list": "Clone of Google Keep, simple TODO List made with React, React-Redux and Redux-Saga. It has most of Google Keep features.",
+  "tic-tac-toe": "Tic-tac-toe is a simple game with three game modes: local (1 v 1), vs computer (Ai) and multiplayer (socket.io).",
   "contact": "Contact me. Enjoy!"
 }

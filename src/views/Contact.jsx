@@ -69,7 +69,7 @@ const StyledLinkedInIcon = styled(Icon)`
 `;
 
 const Contact = () => {
-  const { i18n, t } = useTranslation();
+  const { t } = useTranslation();
 
   function onAtIconClick() {
     window.open("mailto:maciek.szostak55@gmail.com");

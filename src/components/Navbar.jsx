@@ -1,6 +1,7 @@
 import { Link } from "react-scroll";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import pl from "constants/pl.png";
 import uk from "constants/uk.png";
 
@@ -47,6 +48,8 @@ const StyledImage = styled(motion.img)`
 `;
 
 const Navbar = () => {
+  const { t } = useTranslation();
+
   return (
     <StyledNavbar>
       <LinkWrapper>
@@ -58,7 +61,7 @@ const Navbar = () => {
           smooth={true}
           duration={300}
         >
-          Welcome
+          {t("nav-welcome")}
         </StyledLink>
         <StyledLink
           activeClass="active"
@@ -68,7 +71,7 @@ const Navbar = () => {
           smooth={true}
           duration={300}
         >
-          Skills
+          {t("nav-skills")}
         </StyledLink>
         <StyledLink
           activeClass="active"
@@ -78,7 +81,7 @@ const Navbar = () => {
           smooth={true}
           duration={300}
         >
-          Projects
+          {t("nav-projects")}
         </StyledLink>
         <StyledLink
           activeClass="active"
@@ -88,7 +91,7 @@ const Navbar = () => {
           smooth={true}
           duration={300}
         >
-          Contact
+          {t("nav-contact")}
         </StyledLink>
       </LinkWrapper>
       <IconWarpper>

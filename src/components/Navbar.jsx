@@ -17,8 +17,7 @@ const StyledNavbar = styled.div`
   height: 56px;
 
   .active {
-    background-color: rgba(211, 211, 211, 0.2);
-    border-radius: 4px;
+    border-bottom: 2px solid ${({ theme }) => theme.colors.js};
   }
 `;
 
@@ -50,7 +49,6 @@ const StyledImage = styled(motion.img)`
 
 const changeLanguage = (lng) => {
   return () => {
-    console.log(`language changed to ${lng}`);
     i18n.changeLanguage(lng);
   };
 };

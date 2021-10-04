@@ -2,6 +2,7 @@ import { Link } from "react-scroll";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import i18n from "i18n";
 import pl from "constants/pl.png";
 import uk from "constants/uk.png";
 
@@ -46,6 +47,13 @@ const StyledImage = styled(motion.img)`
   width: 42px;
   height: 42px;
 `;
+
+const changeLanguage = (lng) => {
+  return () => {
+    console.log(`language changed to ${lng}`);
+    i18n.changeLanguage(lng);
+  };
+};
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -95,8 +103,16 @@ const Navbar = () => {
         </StyledLink>
       </LinkWrapper>
       <IconWarpper>
-        <StyledImage src={uk} whileHover={{ scale: 1.1 }} />
-        <StyledImage src={pl} whileHover={{ scale: 1.1 }} />
+        <StyledImage
+          onClick={changeLanguage("en")}
+          src={uk}
+          whileHover={{ scale: 1.1 }}
+        />
+        <StyledImage
+          onClick={changeLanguage("pl")}
+          src={pl}
+          whileHover={{ scale: 1.1 }}
+        />
       </IconWarpper>
     </StyledNavbar>
   );

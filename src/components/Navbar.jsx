@@ -1,4 +1,3 @@
-import { Link } from "react-scroll";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -12,18 +11,15 @@ const StyledNavbar = styled.div`
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  z-index: 999;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 56px;
-
-  .active {
-    border-bottom: 2px solid ${({ theme }) => theme.colors.js};
-  }
 `;
 
 const LinkWrapper = styled.ul``;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
   background-color: transparent;
   color: ${({ theme }) => theme.colors.white};
   cursor: pointer;
@@ -36,9 +32,13 @@ const StyledLink = styled(Link)`
     font-size: ${({ theme }) => theme.fontSize.l};
     margin: 6px 2px;
   }
+  ${({ active, theme }) =>
+    active && `border-bottom: 2px solid ${theme.colors.js}`};
 `;
 
-const IconWarpper = styled.div``;
+const IconWrapper = styled.div`
+  margin-right: 12px;
+`;
 
 const StyledImage = styled(motion.img)`
   cursor: pointer;
@@ -53,54 +53,23 @@ const changeLanguage = (lng) => {
   };
 };
 
-const Navbar = () => {
+const Navbar = ({ activeId, items, onItemClick }) => {
   const { t } = useTranslation();
 
   return (
     <StyledNavbar>
       <LinkWrapper>
-        <StyledLink
-          activeClass="active"
-          to="welcome"
-          spy={true}
-          hashSpy={true}
-          smooth={true}
-          duration={300}
-        >
-          {t("nav-welcome")}
-        </StyledLink>
-        <StyledLink
-          activeClass="active"
-          to="about"
-          spy={true}
-          hashSpy={true}
-          smooth={true}
-          duration={300}
-        >
-          {t("nav-skills")}
-        </StyledLink>
-        <StyledLink
-          activeClass="active"
-          to="projects"
-          spy={true}
-          hashSpy={true}
-          smooth={true}
-          duration={300}
-        >
-          {t("nav-projects")}
-        </StyledLink>
-        <StyledLink
-          activeClass="active"
-          to="contact"
-          spy={true}
-          hashSpy={true}
-          smooth={true}
-          duration={300}
-        >
-          {t("nav-contact")}
-        </StyledLink>
+        {items.map((item) => (
+          <StyledLink
+            key={item.id}
+            active={item.id === activeId}
+            onClick={(event) => onItemClick(event, item)}
+          >
+            {t(item.name)}
+          </StyledLink>
+        ))}
       </LinkWrapper>
-      <IconWarpper>
+      <IconWrapper>
         <StyledImage
           onClick={changeLanguage("en")}
           src={uk}
@@ -111,7 +80,7 @@ const Navbar = () => {
           src={pl}
           whileHover={{ scale: 1.1 }}
         />
-      </IconWarpper>
+      </IconWrapper>
     </StyledNavbar>
   );
 };

@@ -2,8 +2,8 @@ import styled from "styled-components";
 import Particles from "react-particles-js";
 
 const StyledParticles = styled(Particles)`
-  width: 100%;
-  height: 100%;
+  background-color: ${({ theme }) => theme.colors.darkBlue};
+  height: 100vh;
 `;
 
 const BackgroundParticles = () => {

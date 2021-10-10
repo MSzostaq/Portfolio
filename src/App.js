@@ -1,31 +1,17 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { theme } from "constants/theme";
-import Contact from "views/Contact";
-import Projects from "views/Projects";
-import Skills from "views/Skills";
-import Welcome from "views/Welcome";
-import DownloadCvButton from "components/DownloadCvButton";
-import Navbar from "components/Navbar";
+import Main from "components/Main";
 
 const Wrapper = styled.div`
   height: 100%;
 `;
 
 const App = () => {
-  useEffect(() => {
-    document.title = "Maciej Szostak";
-  });
-
   return (
     <Wrapper>
       <ThemeProvider theme={theme}>
-        <Navbar />
-        <Welcome />
-        <Skills />
-        <Projects />
-        <Contact />
-        <DownloadCvButton />
+        <Main />
       </ThemeProvider>
     </Wrapper>
   );

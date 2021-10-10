@@ -13,6 +13,7 @@ const Button = styled.button`
   position: fixed;
   right: 20px;
   bottom: 20px;
+  z-index: 999;
   width: 48px;
   height: 48px;
 
@@ -24,7 +25,7 @@ const Button = styled.button`
 
 const StyledText = styled.p`
   color: ${({ theme }) => theme.colors.grey};
-  font-size: ${({ theme }) => theme.fontSize.s};
+  font-size: ${({ theme }) => theme.fontSize.l};
 `;
 
 const StyledIcon = styled(Icon)`
@@ -34,8 +35,8 @@ const StyledIcon = styled(Icon)`
   height: 24px;
 
   @media (min-width: 800px) {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
   }
 `;
 

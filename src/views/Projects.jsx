@@ -2,22 +2,18 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import BackgroundParticles from "components/BackgroundParticles";
 import Icon from "components/Icon";
 import ProjectCard from "components/ProjectCard";
 
 const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.darkBlue};
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
   height: 100%;
 `;
 
 const ContentWrapper = styled.div`
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -179,7 +175,6 @@ const Contact = () => {
 
   return (
     <Wrapper id="projects">
-      <BackgroundParticles />
       <ContentWrapper>
         <Title>{t("project-title")}</Title>
         <ProjectWrapper>

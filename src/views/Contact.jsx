@@ -2,22 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import BackgroundParticles from "components/BackgroundParticles";
 import Icon from "components/Icon";
 
 const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.darkBlue};
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
   height: 100%;
 `;
 
-const ContentWrapper = styled.div`
-  position: absolute;
-`;
+const ContentWrapper = styled.div``;
 
 const Title = styled.p`
   color: ${({ theme }) => theme.colors.white};
@@ -81,7 +76,6 @@ const Contact = () => {
 
   return (
     <Wrapper id="contact">
-      <BackgroundParticles />
       <ContentWrapper>
         <Title>{t("contact")}</Title>
         <Content>

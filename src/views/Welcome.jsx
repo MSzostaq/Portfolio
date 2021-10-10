@@ -2,15 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import Typed from "react-typed";
 import { useTranslation } from "react-i18next";
-import BackgroundParticles from "components/BackgroundParticles";
 
 const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.darkBlue};
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
   height: 100%;
 `;
 
@@ -21,9 +18,7 @@ const WelcomeWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   overflow-wrap: break-word;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  height: 100vh;
 `;
 
 const Title = styled(Typed)`
@@ -51,7 +46,6 @@ const Welcome = () => {
 
   return (
     <Wrapper id="welcome">
-      <BackgroundParticles />
       <WelcomeWrapper>
         <Title strings={[t("welcome")]} typeSpeed={40} />
         <br />

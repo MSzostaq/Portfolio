@@ -20,6 +20,8 @@ const StyledNavbar = styled.div`
 const LinkWrapper = styled.ul``;
 
 const StyledLink = styled.a`
+  ${({ active, theme }) =>
+    active && `border-bottom: 2px solid ${theme.colors.js}`};
   background-color: transparent;
   color: ${({ theme }) => theme.colors.white};
   cursor: pointer;
@@ -32,8 +34,6 @@ const StyledLink = styled.a`
     font-size: ${({ theme }) => theme.fontSize.l};
     margin: 6px 2px;
   }
-  ${({ active, theme }) =>
-    active && `border-bottom: 2px solid ${theme.colors.js}`};
 `;
 
 const IconWrapper = styled.div`

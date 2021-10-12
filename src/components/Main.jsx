@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import Contact from "views/Contact";
+import Hello from "views/Hello";
 import Projects from "views/Projects";
 import Skills from "views/Skills";
-import Welcome from "views/Welcome";
 import BackgroundParticles from "components/BackgroundParticles";
 import DownloadCvButton from "components/DownloadCvButton";
 import Navbar from "components/Navbar";
@@ -23,13 +23,13 @@ const Views = styled.div`
 `;
 
 const Main = () => {
-  const [currentViewId, setCurrentViewId] = useState("welcome");
+  const [currentViewId, setCurrentViewId] = useState("hello");
 
   const views = [
-    { id: "welcome", name: "nav-welcome" },
-    { id: "skills", name: "nav-skills" },
-    { id: "projects", name: "nav-projects" },
-    { id: "contact", name: "nav-contact" },
+    { id: "hello", name: "nav_hello" },
+    { id: "skills", name: "nav_skills" },
+    { id: "projects", name: "nav_projects" },
+    { id: "contact", name: "nav_contact" },
   ];
   const viewsRef = useRef();
 
@@ -59,7 +59,7 @@ const Main = () => {
           onItemClick={onNavbarItemClick}
           activeId={currentViewId}
         />
-        <Welcome />
+        <Hello />
         <Skills />
         <Projects />
         <Contact />

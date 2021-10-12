@@ -21,7 +21,7 @@ const WelcomeWrapper = styled.div`
   height: 100vh;
 `;
 
-const Title = styled(Typed)`
+const Title = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: bold;
@@ -35,22 +35,22 @@ const SecondaryTitle = styled(Typed)`
   color: ${({ theme }) => theme.colors.white};
   font-size: ${({ theme }) => theme.fontSize.m};
   font-weight: bold;
+  margin-top: 12px;
 
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.l};
   }
 `;
 
-const Welcome = () => {
+const Hello = () => {
   const { t } = useTranslation();
 
   return (
-    <Wrapper id="welcome">
+    <Wrapper id="hello">
       <WelcomeWrapper>
-        <Title strings={[t("welcome")]} typeSpeed={40} />
-        <br />
+        <Title>{t("welcome")}</Title>
         <SecondaryTitle
-          strings={[t("coment")]}
+          strings={["// frontend dev"]}
           startDelay={4000}
           showCursor={false}
           typeSpeed={40}
@@ -60,4 +60,4 @@ const Welcome = () => {
   );
 };
 
-export default Welcome;
+export default Hello;

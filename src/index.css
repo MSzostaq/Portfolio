@@ -196,8 +196,8 @@ a {
   background-color: #c0c0c0;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
 
 body {
-  font-family: "Josefin Sans", cursive;
+  font-family: "Roboto", sans-serif;
 }

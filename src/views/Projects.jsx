@@ -25,6 +25,7 @@ const Title = styled.p`
   font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: bold;
   margin-top: 48px;
+  margin-bottom: auto;
 
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.xxl};
@@ -46,7 +47,6 @@ const ProjectWrapper = styled.div`
 const ProjectTitle = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-size: ${({ theme }) => theme.fontSize.l};
-  font-weight: bold;
   margin: 4px;
 
   @media (min-width: 800px) {
@@ -125,18 +125,18 @@ const ButtonWrapper = styled.div`
 `;
 
 const StyledButton = styled(motion.button)`
-  background-color: rgba(0, 0, 100, 0.7);
+  background-color: rgba(234, 234, 234, 0.2);
   border-radius: 4px;
   color: ${({ theme }) => theme.colors.lightGrey};
   display: flex;
   align-items: center;
   font-size: ${({ theme }) => theme.fontSize.s};
-  font-weight: bold;
   margin: 4px;
   padding: 4px;
 
   @media (min-width: 800px) {
-    padding: 8px;
+    font-size: ${({ theme }) => theme.fontSize.m};
+    padding: 6px 8px;
   }
 `;
 
@@ -144,6 +144,11 @@ const StyledGithub = styled(Icon)`
   color: ${({ theme }) => theme.colors.silver};
   width: 20px;
   height: 20px;
+
+  @media (min-width: 800px) {
+    width: 24px;
+    height: 24px;
+  }
 `;
 
 const Contact = () => {

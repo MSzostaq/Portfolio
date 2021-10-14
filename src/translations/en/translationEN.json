@@ -12,6 +12,6 @@
   "project-title": "Check out my projects",
   "cryptorate": "My first React application. Cryptorate connects with external API - DatoCMS, has pagination and is fully responsive.",
   "todo-list": "Clone of Google Keep, simple TODO List made with React, React-Redux and Redux-Saga. It has most of Google Keep features.",
-  "tic-tac-toe": "Tic-tac-toe is a simple game with three game modes: local (1 v 1), vs computer (Ai) and multiplayer (socket.io).",
+  "tic-tac-toe": "Tic-tac-toe is a simple game with three game modes: local (1v1), vs computer (Ai) and multiplayer online(socket.io).",
   "contact": "Contact me. Enjoy!"
 }

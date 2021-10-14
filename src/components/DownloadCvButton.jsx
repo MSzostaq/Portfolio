@@ -25,7 +25,11 @@ const Button = styled.button`
 
 const StyledText = styled.p`
   color: ${({ theme }) => theme.colors.grey};
-  font-size: ${({ theme }) => theme.fontSize.l};
+  font-size: ${({ theme }) => theme.fontSize.s};
+
+  @media (min-width: 800px) {
+    font-size: ${({ theme }) => theme.fontSize.m};
+  }
 `;
 
 const StyledIcon = styled(Icon)`

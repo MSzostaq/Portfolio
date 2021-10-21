@@ -175,7 +175,7 @@ const Contact = () => {
   }
 
   function onTicTacToeDeployButtonClick() {
-    window.open("https://github.com/MSzostaq/tic-tac-toe");
+    window.open("https://ms-tic-tac-toe.herokuapp.com/#/");
   }
 
   return (

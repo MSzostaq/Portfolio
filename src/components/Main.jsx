@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
+import qs from "qs";
 import Contact from "views/Contact";
 import Hello from "views/Hello";
 import Projects from "views/Projects";
@@ -17,7 +18,7 @@ const Views = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  overflow-y: auto;
+  overflow-y: hidden;
   height: 100vh;
   width: 100%;
 `;
@@ -39,10 +40,18 @@ const Main = () => {
     viewsRef.current.scrollTo({ top, behavior: "smooth" });
   }, [currentViewId]);
 
-  function onScroll(event) {
-    if (event.target.scrollTop > 40) {
+  useEffect(() => {
+    const hash = window.location.hash.slice(1);
+    const viewFound = views.find(({ id }) => id === hash);
+    if (!viewFound) {
+      return;
     }
-  }
+    const viewId = viewFound.id;
+    const view = document.getElementById(viewId);
+    const top = view.offsetTop;
+    viewsRef.current.scrollTo({ top });
+    setCurrentViewId(viewId);
+  }, []);
 
   function onNavbarItemClick(event, item) {
     event.preventDefault();
@@ -53,7 +62,7 @@ const Main = () => {
   return (
     <Wrapper>
       <BackgroundParticles />
-      <Views onScroll={onScroll} ref={viewsRef}>
+      <Views ref={viewsRef}>
         <Navbar
           items={views}
           onItemClick={onNavbarItemClick}

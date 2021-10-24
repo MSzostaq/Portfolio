@@ -1,9 +1,7 @@
+import React, { useState } from "react";
 import styled from "styled-components";
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import i18n from "i18n";
-import pl from "constants/pl.png";
-import uk from "constants/uk.png";
+import LanguageToggle from "components/LanguageToggle";
 
 const StyledNavbar = styled.div`
   background-color: rgba(0, 0, 0, 0.3);
@@ -40,24 +38,22 @@ const StyledLink = styled.a`
 `;
 
 const IconWrapper = styled.div`
-  margin-right: 12px;
+  display: flex;
+  margin-right: 8px;
 `;
-
-const StyledImage = styled(motion.img)`
-  cursor: pointer;
-  margin: 0 8px;
-  width: 42px;
-  height: 42px;
-`;
-
-const changeLanguage = (lng) => {
-  return () => {
-    i18n.changeLanguage(lng);
-  };
-};
 
 const Navbar = ({ activeId, items, onItemClick }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
+  const [value, setValue] = useState(false);
+  function onValueChange(newValue) {
+    setValue(newValue);
+    changeLanguage(newValue ? "pl" : "en");
+  }
 
   return (
     <StyledNavbar>
@@ -73,16 +69,7 @@ const Navbar = ({ activeId, items, onItemClick }) => {
         ))}
       </LinkWrapper>
       <IconWrapper>
-        <StyledImage
-          onClick={changeLanguage("en")}
-          src={uk}
-          whileHover={{ scale: 1.1 }}
-        />
-        <StyledImage
-          onClick={changeLanguage("pl")}
-          src={pl}
-          whileHover={{ scale: 1.1 }}
-        />
+        <LanguageToggle value={value} onChange={onValueChange} />
       </IconWrapper>
     </StyledNavbar>
   );

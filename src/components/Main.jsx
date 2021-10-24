@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import qs from "qs";
 import Contact from "views/Contact";
 import Hello from "views/Hello";
 import Projects from "views/Projects";

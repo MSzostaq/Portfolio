@@ -11,8 +11,8 @@ const Button = styled.button`
   flex-direction: column;
   padding: 2px;
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: 16px;
+  bottom: 16px;
   z-index: 999;
   width: 48px;
   height: 48px;

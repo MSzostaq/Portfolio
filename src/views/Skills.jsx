@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import pl from "constants/pl.png";
-import uk from "constants/uk.png";
+import pl from "assets/pl.png";
+import uk from "assets/uk.png";
 import Icon from "components/Icon";
 
 const Wrapper = styled.div`

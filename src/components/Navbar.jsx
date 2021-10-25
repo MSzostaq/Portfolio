@@ -23,7 +23,7 @@ const StyledLink = styled.a`
   background-color: transparent;
   color: ${({ theme }) => theme.colors.white};
   cursor: pointer;
-  font-size: ${({ theme }) => theme.fontSize.m};
+  font-size: ${({ theme }) => theme.fontSize.s};
   font-weight: bold;
   margin: 4px 2px;
   padding: 4px;
@@ -35,11 +35,6 @@ const StyledLink = styled.a`
 
   ${({ active, theme }) =>
     active && `border-bottom: 2px solid ${theme.colors.js}`};
-`;
-
-const IconWrapper = styled.div`
-  display: flex;
-  margin-right: 8px;
 `;
 
 const Navbar = ({ activeId, items, onItemClick }) => {
@@ -68,9 +63,7 @@ const Navbar = ({ activeId, items, onItemClick }) => {
           </StyledLink>
         ))}
       </LinkWrapper>
-      <IconWrapper>
-        <LanguageToggle value={value} onChange={onValueChange} />
-      </IconWrapper>
+      <LanguageToggle value={value} onChange={onValueChange} />
     </StyledNavbar>
   );
 };

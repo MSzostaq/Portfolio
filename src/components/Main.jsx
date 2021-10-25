@@ -7,6 +7,7 @@ import Skills from "views/Skills";
 import BackgroundParticles from "components/BackgroundParticles";
 import DownloadCvButton from "components/DownloadCvButton";
 import Navbar from "components/Navbar";
+import NavigationDots from "components/NavigationDots";
 
 const Wrapper = styled.div`
   position: relative;
@@ -63,6 +64,11 @@ const Main = () => {
       <BackgroundParticles />
       <Views ref={viewsRef}>
         <Navbar
+          items={views}
+          onItemClick={onNavbarItemClick}
+          activeId={currentViewId}
+        />
+        <NavigationDots
           items={views}
           onItemClick={onNavbarItemClick}
           activeId={currentViewId}

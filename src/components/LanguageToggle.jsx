@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import uk_circle from "constants/uk_circle.png";
-import pl_circle from "constants/pl_circle.png";
+import uk_circle from "assets/uk_circle.png";
+import pl_circle from "assets/pl_circle.png";
 
 const ToggleButton = styled.button`
   background-color: #696969;
@@ -9,6 +9,7 @@ const ToggleButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: ${({ isOn }) => (isOn ? "flex-end" : "flex-start")};
+  margin-right: 12px;
   width: 56px;
   height: 32px;
 `;

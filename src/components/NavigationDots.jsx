@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   position: fixed;
   top: 80px;
-  right: 16px;
+  right: 12px;
 `;
 
 const Dot = styled.a`

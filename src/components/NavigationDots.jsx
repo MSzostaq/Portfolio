@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   position: fixed;
-  top: 80px;
+  top: 50%;
   right: 12px;
 `;
 
@@ -16,8 +16,8 @@ const Dot = styled.a`
   border-radius: 50%;
   cursor: pointer;
   margin: 4px;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
 
   ${({ active, theme }) => active && `width: 16px; height: 16px;`};
 `;

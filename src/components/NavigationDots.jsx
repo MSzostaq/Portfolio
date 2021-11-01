@@ -8,7 +8,12 @@ const Wrapper = styled.div`
   flex-direction: column;
   position: fixed;
   top: 50%;
-  right: 12px;
+  right: 8px;
+
+  @media (min-width: 800px) {
+    top: 120%;
+    right: -120px;
+  }
 `;
 
 const Dot = styled.a`
@@ -16,10 +21,10 @@ const Dot = styled.a`
   border-radius: 50%;
   cursor: pointer;
   margin: 4px;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 
-  ${({ active, theme }) => active && `width: 16px; height: 16px;`};
+  ${({ active, theme }) => active && `width: 12px; height: 12px;`};
 `;
 
 const NavigationDots = ({ activeId, items, onItemClick }) => {

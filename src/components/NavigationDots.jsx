@@ -7,12 +7,12 @@ const Wrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   position: fixed;
-  top: 50%;
-  right: 8px;
+  top: 120%;
+  right: -120px;
 
   @media (min-width: 800px) {
-    top: 120%;
-    right: -120px;
+    top: 50%;
+    right: 8px;
   }
 `;
 

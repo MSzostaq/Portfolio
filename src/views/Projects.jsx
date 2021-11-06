@@ -159,7 +159,7 @@ const Contact = () => {
   }
 
   function onCryptorateDeployButtonClick() {
-    window.open("https://cryptorate-app.herokuapp.com/dashboard#/");
+    window.open("https://ms-cryptorate-app.herokuapp.com/dashboard#/");
   }
 
   function onTodoListGithubButtonClick() {

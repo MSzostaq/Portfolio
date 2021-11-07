@@ -21,10 +21,10 @@ const Dot = styled.a`
   border-radius: 50%;
   cursor: pointer;
   margin: 4px;
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
 
-  ${({ active, theme }) => active && `width: 12px; height: 12px;`};
+  ${({ active, theme }) => active && `width: 16px; height: 16px;`};
 `;
 
 const NavigationDots = ({ activeId, items, onItemClick }) => {

@@ -22,6 +22,10 @@ const Title = styled.p`
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.xxl};
   }
+
+  @media (min-width: 1800px) {
+    font-size: ${({ theme }) => theme.fontSize.xxxl};
+  }
 `;
 
 const Content = styled.ul`
@@ -47,6 +51,12 @@ const StyledMailIcon = styled(Icon)`
     width: 64px;
     height: 64px;
   }
+
+  @media (min-width: 1800px) {
+    margin: 8px;
+    width: 80px;
+    height: 80px;
+  }
 `;
 
 const StyledLinkedInIcon = styled(Icon)`
@@ -60,6 +70,12 @@ const StyledLinkedInIcon = styled(Icon)`
     margin: 8px;
     width: 64px;
     height: 64px;
+  }
+
+  @media (min-width: 1800px) {
+    margin: 8px;
+    width: 80px;
+    height: 80px;
   }
 `;
 

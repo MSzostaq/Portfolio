@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Icon from "components/Icon";
-import ProjectCard from "components/ProjectCard";
 
 const Wrapper = styled.div`
   display: flex;
@@ -32,15 +31,44 @@ const Title = styled.p`
     margin-top: auto;
     margin-bottom: 16px;
   }
+
+  @media (min-width: 1800px) {
+    font-size: ${({ theme }) => theme.fontSize.xxxl};
+    margin-top: auto;
+    margin-bottom: 24px;
+  }
 `;
 
 const ProjectWrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 8px;
+  width: 100%;
+  height: 100%;
 
   @media (min-width: 800px) {
     flex-direction: row;
+  }
+`;
+
+const ProjectCard = styled.div`
+  background-color: rgba(0, 0, 102, 0.3);
+  border-radius: 8px;
+  margin: 4px;
+  padding: 4px;
+  width: 90vw;
+  height: 25vh;
+
+  @media (min-width: 800px) {
+    width: 30vw;
+    height: 56vh;
+    margin: 8px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 30vw;
+    height: 36vh;
+    margin: 8px;
   }
 `;
 
@@ -53,6 +81,11 @@ const ProjectTitle = styled.p`
     font-size: ${({ theme }) => theme.fontSize.xl};
     margin: 8px;
   }
+
+  @media (min-width: 1800px) {
+    font-size: ${({ theme }) => theme.fontSize.xxl};
+    margin: 16px 8px;
+  }
 `;
 
 const ProjectContent = styled.p`
@@ -64,6 +97,11 @@ const ProjectContent = styled.p`
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.m};
     margin: 8px;
+  }
+
+  @media (min-width: 1800px) {
+    font-size: ${({ theme }) => theme.fontSize.l};
+    margin: 16px 8px;
   }
 `;
 
@@ -78,6 +116,11 @@ const StyledHtmlIcon = styled(Icon)`
   margin: 6px;
   width: 48px;
   height: 48px;
+
+  @media (min-width: 1800px) {
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 const StyledCssIcon = styled(Icon)`
@@ -85,6 +128,11 @@ const StyledCssIcon = styled(Icon)`
   margin: 6px;
   width: 48px;
   height: 48px;
+
+  @media (min-width: 1800px) {
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 const StyledJsIcon = styled(Icon)`
@@ -92,6 +140,11 @@ const StyledJsIcon = styled(Icon)`
   margin: 6px;
   width: 48px;
   height: 48px;
+
+  @media (min-width: 1800px) {
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 const StyledReactIcon = styled(Icon)`
@@ -99,6 +152,11 @@ const StyledReactIcon = styled(Icon)`
   margin: 6px;
   width: 48px;
   height: 48px;
+
+  @media (min-width: 1800px) {
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 const StyledReduxIcon = styled(Icon)`
@@ -106,6 +164,11 @@ const StyledReduxIcon = styled(Icon)`
   margin: 6px;
   width: 48px;
   height: 48px;
+
+  @media (min-width: 1800px) {
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 const StyledDatocmsIcon = styled(Icon)`
@@ -113,6 +176,11 @@ const StyledDatocmsIcon = styled(Icon)`
   margin: 6px;
   width: 48px;
   height: 48px;
+
+  @media (min-width: 1800px) {
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 const ButtonWrapper = styled.div`
@@ -138,6 +206,11 @@ const StyledButton = styled(motion.button)`
     font-size: ${({ theme }) => theme.fontSize.m};
     padding: 6px 8px;
   }
+
+  @media (min-width: 1800px) {
+    font-size: ${({ theme }) => theme.fontSize.l};
+    padding: 12px 10px;
+  }
 `;
 
 const StyledGithub = styled(Icon)`
@@ -148,6 +221,11 @@ const StyledGithub = styled(Icon)`
   @media (min-width: 800px) {
     width: 24px;
     height: 24px;
+  }
+
+  @media (min-width: 1800px) {
+    width: 32px;
+    height: 32px;
   }
 `;
 

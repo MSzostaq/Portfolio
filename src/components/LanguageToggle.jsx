@@ -12,6 +12,12 @@ const ToggleButton = styled.button`
   margin-right: 12px;
   width: 56px;
   height: 32px;
+
+  @media (min-width: 1800px) {
+    border-radius: 24px;
+    width: 80px;
+    height: 48px;
+  }
 `;
 
 const Switch = styled.div`
@@ -21,6 +27,11 @@ const Switch = styled.div`
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   width: 32px;
   height: 32px;
+
+  @media (min-width: 1800px) {
+    width: 48px;
+    height: 48px;
+  }
 `;
 
 const LanguageToggle = ({ value, onChange }) => {

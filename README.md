@@ -1,4 +1,4 @@
 ## My portfolio
 
-Feel free to check it out!
+Feel free to check out my portfolio!
 https://ms-portfolio-app.herokuapp.com/

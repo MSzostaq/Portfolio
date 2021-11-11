@@ -30,6 +30,10 @@ const Title = styled.p`
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.xxl};
   }
+
+  @media (min-width: 1800px) {
+    font-size: ${({ theme }) => theme.fontSize.xxxl};
+  }
 `;
 
 const Content = styled.ul`
@@ -60,6 +64,12 @@ const StyledHtmlIcon = styled(Icon)`
     width: 64px;
     height: 64px;
   }
+
+  @media (min-width: 1800px) {
+    margin: 8px;
+    width: 80px;
+    height: 80px;
+  }
 `;
 
 const StyledCssIcon = styled(Icon)`
@@ -72,6 +82,12 @@ const StyledCssIcon = styled(Icon)`
     margin: 8px;
     width: 64px;
     height: 64px;
+  }
+
+  @media (min-width: 1800px) {
+    margin: 8px;
+    width: 80px;
+    height: 80px;
   }
 `;
 
@@ -86,6 +102,12 @@ const StyledJsIcon = styled(Icon)`
     width: 64px;
     height: 64px;
   }
+
+  @media (min-width: 1800px) {
+    margin: 8px;
+    width: 80px;
+    height: 80px;
+  }
 `;
 
 const StyledReactIcon = styled(Icon)`
@@ -98,6 +120,12 @@ const StyledReactIcon = styled(Icon)`
     margin: 8px;
     width: 64px;
     height: 64px;
+  }
+
+  @media (min-width: 1800px) {
+    margin: 8px;
+    width: 80px;
+    height: 80px;
   }
 `;
 
@@ -112,6 +140,12 @@ const StyledReduxtIcon = styled(Icon)`
     width: 64px;
     height: 64px;
   }
+
+  @media (min-width: 1800px) {
+    margin: 8px;
+    width: 80px;
+    height: 80px;
+  }
 `;
 
 const StyledGitIcon = styled(Icon)`
@@ -124,6 +158,12 @@ const StyledGitIcon = styled(Icon)`
     margin: 8px;
     width: 64px;
     height: 64px;
+  }
+
+  @media (min-width: 1800px) {
+    margin: 8px;
+    width: 80px;
+    height: 80px;
   }
 `;
 
@@ -138,6 +178,12 @@ const StyledDatocmsIcon = styled(Icon)`
     width: 64px;
     height: 64px;
   }
+
+  @media (min-width: 1800px) {
+    margin: 8px;
+    width: 80px;
+    height: 80px;
+  }
 `;
 
 const SecondaryTitle = styled.p`
@@ -151,6 +197,10 @@ const SecondaryTitle = styled.p`
 
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.l};
+  }
+
+  @media (min-width: 1800px) {
+    font-size: ${({ theme }) => theme.fontSize.xl};
   }
 `;
 

@@ -13,6 +13,10 @@ const StyledNavbar = styled.div`
   left: 0;
   width: 100%;
   height: 56px;
+
+  @media (min-width: 1800px) {
+    height: 80px;
+  }
 `;
 
 const LinkWrapper = styled.ul`
@@ -31,6 +35,11 @@ const StyledLink = styled.a`
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.l};
     margin: 6px 2px;
+  }
+
+  @media (min-width: 1800px) {
+    font-size: ${({ theme }) => theme.fontSize.xl};
+    margin: 12px 6px;
   }
 
   ${({ active, theme }) =>

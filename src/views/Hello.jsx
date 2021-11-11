@@ -30,6 +30,10 @@ const Title = styled.p`
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.xxl};
   }
+
+  @media (min-width: 1800px) {
+    font-size: ${({ theme }) => theme.fontSize.xxxl};
+  }
 `;
 
 const SecondaryTitle = styled(Typed)`
@@ -40,6 +44,10 @@ const SecondaryTitle = styled(Typed)`
 
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.l};
+  }
+
+  @media (min-width: 1800px) {
+    font-size: ${({ theme }) => theme.fontSize.xl};
   }
 `;
 

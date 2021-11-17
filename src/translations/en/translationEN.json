@@ -8,7 +8,7 @@
   "languages": "Languages:",
   "en": "(B2 level)",
   "pl": "(native)",
-  "degree": "Bachelor of Engineering",
+  "degree": "Future Bachelor of Engineering - last semester of studies",
   "project-title": "Check out my projects",
   "cryptorate": "My first React application. Cryptorate connects with external API - DatoCMS, has pagination and is fully responsive.",
   "todo-list": "Clone of Google Keep, simple TODO List made with React, React-Redux and Redux-Saga. It has most of Google Keep features.",

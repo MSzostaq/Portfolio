@@ -8,7 +8,7 @@
   "languages": "Języki:",
   "en": "(poziom B2)",
   "pl": "(ojczysty)",
-  "degree": "Inżynier",
+  "degree": "Przyszły inżynier - ostatni semestr studiów",
   "project-title": "Sprawdź moje projekty",
   "cryptorate": "Moja pierwsza aplikacja napisana w React. Łączy się ona z zewnętrznym API - DatoCMS, ma paginację i jest w pełni responsywna.",
   "todo-list": "Klon Google Keep, prosta lista zadań napisana w React, React-Redux i Redux-Saga. Ma większość fukcji oryginalnej aplikacji.",

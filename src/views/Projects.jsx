@@ -253,7 +253,7 @@ const Contact = () => {
   }
 
   function onTicTacToeDeployButtonClick() {
-    window.open("https://ms-tic-tac-toe.herokuapp.com/#/");
+    window.open("https://ms-xoxo.herokuapp.com/#/");
   }
 
   return (

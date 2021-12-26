@@ -24,18 +24,17 @@ const Title = styled.p`
   font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: bold;
   margin-top: 48px;
-  margin-bottom: auto;
+  margin-bottom: 16px;
 
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.xxl};
     margin-top: auto;
-    margin-bottom: 16px;
   }
 
   @media (min-width: 1800px) {
     font-size: ${({ theme }) => theme.fontSize.xxxl};
     margin-top: auto;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
   }
 `;
 
@@ -57,31 +56,30 @@ const ProjectCard = styled.div`
   margin: 4px;
   padding: 4px;
   width: 90vw;
-  height: 25vh;
+  height: 24vh;
 
   @media (min-width: 800px) {
     width: 30vw;
-    height: 56vh;
+    height: 42vh;
     margin: 8px;
   }
 
   @media (min-width: 880px) {
     width: 30vw;
-    height: 40vh;
-    margin: 8px;
+    height: 56vh;
   }
 
   @media (min-width: 1200px) {
     width: 30vw;
-    height: 36vh;
-    margin: 8px;
+    height: 32vh;
   }
 `;
 
 const ProjectTitle = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-size: ${({ theme }) => theme.fontSize.l};
-  margin: 4px;
+  font-weight: bold;
+  margin: 8px 4px;
 
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.xl};
@@ -90,7 +88,7 @@ const ProjectTitle = styled.p`
 
   @media (min-width: 1800px) {
     font-size: ${({ theme }) => theme.fontSize.xxl};
-    margin: 16px 8px;
+    margin: 24px 8px;
   }
 `;
 
@@ -107,7 +105,7 @@ const ProjectContent = styled.p`
 
   @media (min-width: 1800px) {
     font-size: ${({ theme }) => theme.fontSize.l};
-    margin: 16px 8px;
+    margin: 22px 8px;
   }
 `;
 
@@ -215,7 +213,7 @@ const StyledButton = styled(motion.button)`
 
   @media (min-width: 1800px) {
     font-size: ${({ theme }) => theme.fontSize.l};
-    padding: 12px 10px;
+    padding: 8px 10px;
   }
 `;
 

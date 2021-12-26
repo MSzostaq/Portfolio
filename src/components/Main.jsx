@@ -25,7 +25,6 @@ const Views = styled.div`
 
 const Main = () => {
   const [currentViewId, setCurrentViewId] = useState("hello");
-
   const views = [
     { id: "hello", name: "nav_hello" },
     { id: "skills", name: "nav_skills" },

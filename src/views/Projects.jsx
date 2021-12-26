@@ -24,11 +24,12 @@ const Title = styled.p`
   font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: bold;
   margin-top: 48px;
-  margin-bottom: 16px;
+  margin-bottom: 4px;
 
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.xxl};
     margin-top: auto;
+    margin-bottom: 16px;
   }
 
   @media (min-width: 1800px) {
@@ -56,7 +57,7 @@ const ProjectCard = styled.div`
   margin: 4px;
   padding: 4px;
   width: 90vw;
-  height: 24vh;
+  height: 26vh;
 
   @media (min-width: 800px) {
     width: 30vw;

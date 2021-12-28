@@ -57,7 +57,7 @@ const ProjectCard = styled.div`
   margin: 4px;
   padding: 4px;
   width: 90vw;
-  height: 30vh;
+  height: 28vh;
 
   @media (min-width: 800px) {
     width: 30vw;

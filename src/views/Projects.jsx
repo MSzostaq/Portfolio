@@ -72,6 +72,11 @@ const ProjectCard = styled.div`
 
   @media (min-width: 1200px) {
     width: 30vw;
+    height: 40vh;
+  }
+
+  @media (min-width: 1800px) {
+    width: 30vw;
     height: 32vh;
   }
 `;
@@ -95,7 +100,7 @@ const ProjectTitle = styled.p`
 
 const ProjectContent = styled.p`
   color: ${({ theme }) => theme.colors.white};
-  font-size: ${({ theme }) => theme.fontSize.s};
+  font-size: ${({ theme }) => theme.fontSize.xs};
   line-height: 1.2;
   margin: 4px;
 

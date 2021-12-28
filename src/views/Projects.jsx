@@ -24,7 +24,6 @@ const Title = styled.p`
   font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: bold;
   margin-top: 48px;
-  margin-bottom: 4px;
 
   @media (min-width: 800px) {
     font-size: ${({ theme }) => theme.fontSize.xxl};

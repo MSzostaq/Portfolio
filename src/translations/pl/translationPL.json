@@ -12,6 +12,6 @@
   "project-title": "Sprawdź moje projekty",
   "cryptorate": "Moja pierwsza aplikacja napisana w React. Łączy się ona z zewnętrznym API - DatoCMS i pokazduje dane o kryptowalutach. Cryptorate ma paginację i jest w pełni responsywna.",
   "todo-list": "Klon Google Keep, jest prosta lista zadań. Aplikacja pozwala na dodawanie, usuwanie i zmienianie nazw list, pozwala także na dodawanie, usuwanie, sortowanie  i oznaczanie zadań jako gotowych.",
-  "tic-tac-toe": "XOXO jest prostą grą w kółko-krzyżyk z trzema trybami gry: lokalnym (1v1), przeciwko komputerowi (Ai) i multiplayer online (socket.io).",
+  "tic-tac-toe": "XOXO jest prostą grą w kółko-krzyżyk z trzema trybami gry: lokalnym (1v1), przeciwko komputerowi (Ai) i multiplayer online (socket.io). Gra posiada dwa motywy i daje wybór pomiędzy dwoma językami.",
   "contact": "Skontaktuj się ze mną!"
 }

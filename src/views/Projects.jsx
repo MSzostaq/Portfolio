@@ -337,7 +337,7 @@ const Contact = () => {
             </ButtonWrapper>
           </ProjectCard>
           <ProjectCard>
-            <ProjectTitle>Tic-tac-toe</ProjectTitle>
+            <ProjectTitle>XOXO</ProjectTitle>
             <ProjectContent>{t("tic-tac-toe")}</ProjectContent>
             <IconWrapper>
               <StyledHtmlIcon icon="html_24" />

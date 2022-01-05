@@ -22,6 +22,27 @@ const WelcomeWrapper = styled(motion.div)`
   height: 100vh;
 `;
 
+const Photo = styled(motion.div)`
+  background-color: ${({ theme }) => theme.colors.white};
+  box-shadow: 0px 0px 8px 0px ${({ theme }) => theme.colors.darkGrey};
+  border-radius: 50%;
+  margin: 20px;
+  width: 160px;
+  height: 160px;
+
+  @media (min-width: 800px) {
+    margin: 24px;
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: 1800px) {
+    margin: 36px;
+    width: 240px;
+    height: 240px;
+  }
+`;
+
 const Title = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-size: ${({ theme }) => theme.fontSize.xl};
@@ -68,6 +89,7 @@ const Hello = () => {
   return (
     <Wrapper id="hello">
       <WelcomeWrapper variants={containter} initial="hidden" animate="show">
+        <Photo whileHover={{ scale: 1.2, transition: { duration: 0.5 } }} />
         <Title>{t("welcome")}</Title>
         <SecondaryTitle
           strings={["// frontend dev"]}

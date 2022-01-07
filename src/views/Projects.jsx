@@ -286,7 +286,6 @@ const Contact = () => {
                 whileHover={{
                   scale: 1.1,
                   boxShadow: "0px 0px 2px rgb(255,255,255",
-                  textShadow: "0px 0px 2px rgb(255,255,255",
                 }}
               >
                 Demo
@@ -296,7 +295,6 @@ const Contact = () => {
                 whileHover={{
                   scale: 1.1,
                   boxShadow: "0px 0px 2px rgb(255,255,255",
-                  textShadow: "0px 0px 2px rgb(255,255,255",
                 }}
               >
                 <StyledGithub icon="github_24" />
@@ -319,7 +317,6 @@ const Contact = () => {
                 whileHover={{
                   scale: 1.1,
                   boxShadow: "0px 0px 2px rgb(255,255,255",
-                  textShadow: "0px 0px 2px rgb(255,255,255",
                 }}
               >
                 Demo
@@ -329,7 +326,6 @@ const Contact = () => {
                 whileHover={{
                   scale: 1.1,
                   boxShadow: "0px 0px 2px rgb(255,255,255",
-                  textShadow: "0px 0px 2px rgb(255,255,255",
                 }}
               >
                 <StyledGithub icon="github_24" />
@@ -352,7 +348,6 @@ const Contact = () => {
                 whileHover={{
                   scale: 1.1,
                   boxShadow: "0px 0px 2px rgb(255,255,255",
-                  textShadow: "0px 0px 2px rgb(255,255,255",
                 }}
               >
                 Demo
@@ -362,7 +357,6 @@ const Contact = () => {
                 whileHover={{
                   scale: 1.1,
                   boxShadow: "0px 0px 2px rgb(255,255,255",
-                  textShadow: "0px 0px 2px rgb(255,255,255",
                 }}
               >
                 <StyledGithub icon="github_24" />

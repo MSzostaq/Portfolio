@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import LanguageToggle from "components/LanguageToggle";
 
 const StyledNavbar = styled.div`
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 30, 0.7);
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -3,6 +3,7 @@ import Typed from "react-typed";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import photo from "assets/profilePhoto.jpg";
 
 const Wrapper = styled.div`
   display: flex;
@@ -22,8 +23,8 @@ const WelcomeWrapper = styled(motion.div)`
   height: 100vh;
 `;
 
-const Photo = styled(motion.div)`
-  background-color: ${({ theme }) => theme.colors.white};
+const Photo = styled(motion.img)`
+  border: 6px solid ${({ theme }) => theme.colors.js};
   box-shadow: 0px 0px 8px 0px ${({ theme }) => theme.colors.darkGrey};
   border-radius: 50%;
   margin: 20px;
@@ -89,7 +90,10 @@ const Hello = () => {
   return (
     <Wrapper id="hello">
       <WelcomeWrapper variants={containter} initial="hidden" animate="show">
-        <Photo whileHover={{ scale: 1.2, transition: { duration: 0.5 } }} />
+        <Photo
+          whileHover={{ scale: 1.15, transition: { duration: 0.2 } }}
+          src={photo}
+        />
         <Title>{t("welcome")}</Title>
         <SecondaryTitle
           strings={["// frontend dev"]}

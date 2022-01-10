@@ -76,7 +76,7 @@ const ProjectCard = styled.div`
 
   @media (min-width: 1800px) {
     width: 30vw;
-    height: 30vh;
+    height: 32vh;
   }
 `;
 

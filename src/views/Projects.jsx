@@ -69,6 +69,11 @@ const ProjectCard = styled.div`
     height: 56vh;
   }
 
+  @media (min-width: 920px) {
+    width: 30vw;
+    height: 46vh;
+  }
+
   @media (min-width: 1200px) {
     width: 30vw;
     height: 42vh;
@@ -76,7 +81,7 @@ const ProjectCard = styled.div`
 
   @media (min-width: 1800px) {
     width: 30vw;
-    height: 32vh;
+    height: 34vh;
   }
 `;
 

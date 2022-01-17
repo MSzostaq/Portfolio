@@ -11,7 +11,7 @@
   "degree": "Bachelor of Engineering",
   "project-title": "Check out my projects",
   "cryptorate": "My first React application. Cryptorate connects with external API - DatoCMS and shows data about cryptocurrencies. The app features pagination and work seamlessly across devices.",
-  "todo-list": "My clone of Google Keep - simple TODO List. Application allows users to add, delete and rename lists. Users can also add, remove, sort and mark items as done.",
+  "todo-list": "My clone of Google Keep - simple TODO List. Application allows users to add, delete and rename lists. Users can also add, remove, sort and mark items inside lists as done.",
   "tic-tac-toe": "XOXO is a simple tic-tac-toe game with three game modes: multiplayer local, singleplayer vs computer and multiplayer online (socket.io). Game features theming and translations.",
   "contact": "Contact me. Enjoy!"
 }

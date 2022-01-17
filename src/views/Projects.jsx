@@ -65,17 +65,18 @@ const ProjectCard = styled.div`
   }
 
   @media (min-width: 880px) {
-    width: 30vw;
     height: 40vh;
   }
 
   @media (min-width: 1200px) {
-    width: 30vw;
     height: 42vh;
   }
 
+  @media (min-width: 1400px) {
+    height: 36vh;
+  }
+
   @media (min-width: 1800px) {
-    width: 30vw;
     height: 34vh;
   }
 `;

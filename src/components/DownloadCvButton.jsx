@@ -47,7 +47,7 @@ const StyledIcon = styled(Icon)`
 const DownloadCvButton = () => {
   function onCvButtonClick() {
     window.open(
-      "https://drive.google.com/file/d/1gvvein8SV63lTZZ2opDyuIhdzfschajs/view"
+      "https://drive.google.com/file/d/1XLFHcLIxdcTq02jJXLDI6o8yxI2mc6t7/view?usp=sharing"
     );
   }
 

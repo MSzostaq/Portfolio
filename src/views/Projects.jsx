@@ -55,17 +55,18 @@ const ProjectCard = styled.div`
   border-radius: 8px;
   margin: 4px;
   padding: 4px;
+  position: relative;
   width: 90vw;
-  height: 28vh;
+  height: 27vh;
 
   @media (min-width: 800px) {
     width: 30vw;
-    height: 48vh;
+    height: 54vh;
     margin: 8px;
   }
 
   @media (min-width: 880px) {
-    height: 40vh;
+    height: 52vh;
   }
 
   @media (min-width: 1200px) {
@@ -195,10 +196,23 @@ const StyledDatocmsIcon = styled(Icon)`
 
 const ButtonWrapper = styled.div`
   display: flex;
-  margin: 4px;
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
 
   @media (min-width: 800px) {
-    margin: 24px 4px;
+    bottom: 4px;
+    left: 4px;
+  }
+
+  @media (min-width: 1200px) {
+    bottom: 4px;
+    left: 4px;
+  }
+
+  @media (min-width: 1800px) {
+    bottom: 4px;
+    left: 4px;
   }
 `;
 

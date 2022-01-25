@@ -197,23 +197,8 @@ const StyledDatocmsIcon = styled(Icon)`
 const ButtonWrapper = styled.div`
   display: flex;
   position: absolute;
-  bottom: 4px;
+  bottom: 8px;
   left: 4px;
-
-  @media (min-width: 800px) {
-    bottom: 4px;
-    left: 4px;
-  }
-
-  @media (min-width: 1200px) {
-    bottom: 4px;
-    left: 4px;
-  }
-
-  @media (min-width: 1800px) {
-    bottom: 4px;
-    left: 4px;
-  }
 `;
 
 const StyledButton = styled(motion.button)`

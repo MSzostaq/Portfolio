@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.9.4",
     "nuxt": "^3.8.1",
     "typescript": "^5.2.2",
     "vue": "^3.3.8",

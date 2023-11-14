@@ -1,6 +1,6 @@
 <template>
-  <div className="flex items-center justify-center w-screen h-screen">
-    <p className="text-purple-600 font-bold text-xl">Projects</p>
-    <NuxtLink to="/">Home page</NuxtLink>
+  <div class="flex flex-col items-center justify-center w-screen h-screen">
+    <p class="text-purple-600 font-bold text-xl">Projects</p>
+    <NuxtLink to="/">back</NuxtLink>
   </div>
 </template>

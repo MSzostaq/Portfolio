@@ -1,6 +1,8 @@
 <template>
-  <header class="flex items-center justify-start max-w-3xl p-4">
-    <div class="">
+  <header
+    class="flex items-center justify-start max-w-3xl px-8 py-4 border-b border-gray-300"
+  >
+    <div class="flex items-center justify-between w-full">
       <button
         @click="
           setColorTheme($colorMode.preference === 'dark' ? 'light' : 'dark')
@@ -20,7 +22,7 @@
         <svg
           v-if="$colorMode.value === 'light'"
           xmlns="http://www.w3.org/2000/svg"
-          class="w-6 h-6 text-gray-600"
+          class="w-6 h-6 text-gray-500"
           viewBox="0 0 20 20"
           fill="currentColor"
         >
@@ -31,6 +33,30 @@
           />
         </svg>
       </button>
+      <HamburgerMenu class="lg:hidden" />
+      <div class="hidden space-x-4 lg:flex">
+        <NuxtLink
+          to="/"
+          class=""
+          active-class="font-bold text-gray-800 dark:text-gray-50"
+        >
+          home
+        </NuxtLink>
+        <NuxtLink
+          to="/projects"
+          class=""
+          active-class="font-bold text-gray-800 dark:text-gray-50"
+        >
+          projects
+        </NuxtLink>
+        <NuxtLink
+          to="/tech"
+          class=""
+          active-class="font-bold text-gray-800 dark:text-gray-50"
+        >
+          tech
+        </NuxtLink>
+      </div>
     </div>
   </header>
 </template>

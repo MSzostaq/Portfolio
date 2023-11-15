@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.dark-mode {
-  @apply text-white bg-gray-800;
+.dark {
+  @apply bg-gray-900 text-gray-50;
 }
 
-.light-mode {
-  @apply text-black bg-gray-100;
+.light {
+  @apply text-gray-700 bg-gray-50;
 }

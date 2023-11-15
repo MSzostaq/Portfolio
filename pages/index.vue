@@ -1,11 +1,13 @@
 <template>
-  <div
-    class="flex flex-col items-center justify-center h-screen dark:bg-slate-800"
-  >
-    <p class="text-xl font-bold text-purple-600 dark:text-white">Hello Nuxt!</p>
-    <div class="flex flex-col space-y-2">
-      <NuxtLink to="/projects" class="dark:text-white">Projects</NuxtLink>
-      <NuxtLink to="/tech" class="dark:text-white">Tech</NuxtLink>
+  <Head>
+    <Title>Frontend Developer · Maciej Szostak</Title>
+    <Meta name="description" content="Frotend developer" />
+  </Head>
+  <div class="flex flex-col items-center justify-center h-screen">
+    <p class="text-2xl font-bold text-purple-600">Hello!</p>
+    <div class="flex flex-col mt-2 space-y-1">
+      <NuxtLink to="/projects" class="">Projects</NuxtLink>
+      <NuxtLink to="/tech" class="">Tech</NuxtLink>
     </div>
   </div>
 </template>

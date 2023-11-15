@@ -1,5 +1,7 @@
 <template>
-  <footer class="flex items-center justify-center p-4 dark:bg-slate-800">
-    <p class="dark:text-white">Footer</p>
+  <footer class="flex items-center justify-center p-4">
+    <div class="">
+      <p class="">Footer</p>
+    </div>
   </footer>
 </template>

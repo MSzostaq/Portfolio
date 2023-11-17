@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex items-center justify-start max-w-3xl px-8 py-4 border-b border-gray-300"
+    class="flex items-center justify-start max-w-3xl p-4 border-b border-gray-300 md:p-0 md:px-8 md:py-5"
   >
     <div class="flex items-center justify-between w-full">
       <button
@@ -33,25 +33,24 @@
           />
         </svg>
       </button>
-      <HamburgerMenu class="lg:hidden fill-gray-500 dark:fill-gray-50" />
-      <div class="hidden space-x-4 lg:flex">
+      <div class="flex space-x-4">
         <NuxtLink
           to="/"
-          class=""
+          class="text-sm md:text-base"
           active-class="font-bold text-gray-800 dark:text-gray-50"
         >
           home
         </NuxtLink>
         <NuxtLink
           to="/projects"
-          class=""
+          class="text-sm md:text-base"
           active-class="font-bold text-gray-800 dark:text-gray-50"
         >
           projects
         </NuxtLink>
         <NuxtLink
           to="/tech"
-          class=""
+          class="text-sm md:text-base"
           active-class="font-bold text-gray-800 dark:text-gray-50"
         >
           tech

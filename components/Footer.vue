@@ -1,5 +1,5 @@
 <template>
-  <footer class="flex items-center justify-center px-4 py-8">
-    <p class="font-light">© 2023 Maciej Szostak</p>
+  <footer class="flex items-center justify-center p-4 md:px-4 md:py-8">
+    <p class="text-sm font-light md:text-base">© 2023 Maciej Szostak</p>
   </footer>
 </template>

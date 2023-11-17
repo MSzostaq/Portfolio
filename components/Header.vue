@@ -9,27 +9,7 @@
         "
       />
       <div class="flex space-x-4">
-        <NuxtLink
-          to="/"
-          class="text-sm md:text-base"
-          active-class="font-bold text-gray-800 dark:text-gray-50"
-        >
-          home
-        </NuxtLink>
-        <NuxtLink
-          to="/projects"
-          class="text-sm md:text-base"
-          active-class="font-bold text-gray-800 dark:text-gray-50"
-        >
-          projects
-        </NuxtLink>
-        <NuxtLink
-          to="/tech"
-          class="text-sm md:text-base"
-          active-class="font-bold text-gray-800 dark:text-gray-50"
-        >
-          tech
-        </NuxtLink>
+        <HeaderLinks />
       </div>
     </div>
   </header>

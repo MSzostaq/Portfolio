@@ -1,17 +1,7 @@
 <template>
-  <svg viewBox="0 0 70 70" width="18.35" height="18.35">
-    <rect width="70" height="10" class="fill-gray-500 dark:fill-white"></rect>
-    <rect
-      y="25"
-      width="70"
-      height="10"
-      class="fill-gray-500 dark:fill-white"
-    ></rect>
-    <rect
-      y="50"
-      width="70"
-      height="10"
-      class="fill-gray-500 dark:fill-white"
-    ></rect>
-  </svg>
+  <button class="flex items-center justify-center w-6 h-6">
+    <svg style="width: 24px; height: 24px" viewBox="0 0 20 20">
+      <path d="M1,4 H18 V6 H1 V4 M1,9 H18 V11 H1 V7 M3,14 H18 V16 H1 V14" />
+    </svg>
+  </button>
 </template>

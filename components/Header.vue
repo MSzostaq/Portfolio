@@ -33,7 +33,7 @@
           />
         </svg>
       </button>
-      <HamburgerMenu class="lg:hidden" />
+      <HamburgerMenu class="lg:hidden fill-gray-500 dark:fill-gray-50" />
       <div class="hidden space-x-4 lg:flex">
         <NuxtLink
           to="/"

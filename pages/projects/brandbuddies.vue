@@ -1,6 +1,6 @@
 <template>
   <Head>
-    <Title>Maciej Szostak · Fansi</Title>
+    <Title>Maciej Szostak · BrandBuddies</Title>
     <Meta name="description" content="Frotend developer" />
   </Head>
   <div class="flex flex-col items-center justify-center h-screen">

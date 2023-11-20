@@ -1,5 +1,10 @@
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "@nuxt/image"],
+  modules: [
+    "@nuxtjs/color-mode",
+    "@nuxt/image",
+    "@nuxtjs/tailwindcss",
+    "nuxt-svgo",
+  ],
   colorMode: {
     classSuffix: "",
   },

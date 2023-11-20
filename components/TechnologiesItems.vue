@@ -2,7 +2,7 @@
   <div
     v-for="technology in TECHNOLOGIES"
     :key="technology.text"
-    class="flex items-center px-2 py-1 m-1 space-x-2 border-2 rounded-lg"
+    class="flex items-center px-2 py-1 m-1 space-x-2 bg-gray-100 border-2 rounded-lg dark:bg-gray-800"
   >
     <component :is="technology.icon" class="w-6 h-6" :fontControlled="false" />
     <span class="text-sm">{{ technology.text }}</span>

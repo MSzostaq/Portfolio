@@ -1,26 +1,24 @@
 <template>
   <div class="flex space-x-4">
     <template v-for="link in links" :key="link.to">
-      <NuxtLink
-        :to="link.to"
-        class="text-sm md:text-base"
-        activeClass="font-bold text-gray-800 dark:text-gray-50"
-      >
+      <NuxtLink :to="link.to" target="_blank" class="text-sm md:text-base">
         {{ link.text }}
       </NuxtLink>
     </template>
+    <ResumeLink />
+    <EmailLink />
   </div>
 </template>
 
 <script setup lang="ts">
 const links = [
   {
-    to: "/",
-    text: "home",
+    to: "https://github.com/MSzostaq",
+    text: "GitHub",
   },
   {
-    to: "/projects",
-    text: "projects",
+    to: "https://www.linkedin.com/in/mszostaq/",
+    text: "Linkedin",
   },
 ];
 </script>

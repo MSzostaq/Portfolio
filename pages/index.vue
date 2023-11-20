@@ -7,10 +7,5 @@
     <Avatar />
     <p class="text-2xl font-bold text-purple-600">Hello!</p>
     <SocialmediasLinks />
-    <IconApollo class="w-12 h-12" :fontControlled="false" />
   </div>
 </template>
-
-<script setup>
-import IconApollo from "~/assets/apollo.svg";
-</script>

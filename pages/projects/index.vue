@@ -7,5 +7,6 @@
     <p class="text-2xl font-bold text-purple-600">Projects</p>
     <NuxtLink to="/projects/fansi">Fansi</NuxtLink>
     <NuxtLink to="/projects/brandbuddies">BrandBuddies</NuxtLink>
+    <Technologies />
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div class="flex space-x-4">
-    <template v-for="link in links" :key="link.to">
+    <template v-for="link in LINKS" :key="link.to">
       <NuxtLink
         :to="link.to"
         class="text-sm md:text-base"
@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-const links = [
+const LINKS = [
   {
     to: "/",
     text: "home",

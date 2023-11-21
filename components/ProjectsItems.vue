@@ -1,7 +1,9 @@
 <template>
   <div v-for="project in PROJECTS" :key="project.title" class="flex flex-col">
     <NuxtLink
-      class="flex items-center mt-4 space-x-1 text-xl font-bold tracking-wide cursor-pointer hover:text-orange-400"
+      :to="project.url"
+      target="_blank"
+      class="flex items-center mt-4 space-x-1 text-xl font-bold tracking-wide cursor-pointer w-max hover:text-orange-400"
     >
       <span>
         {{ project.title }}

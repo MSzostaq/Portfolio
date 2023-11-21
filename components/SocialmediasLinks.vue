@@ -4,15 +4,15 @@
       <NuxtLink
         :to="link.to"
         target="_blank"
-        class="flex items-center space-x-1 text-sm md:text-base hover:text-orange-500"
+        class="flex items-center space-x-1 hover:text-orange-500"
       >
         <component :is="link.icon" class="w-4 h-4" :fontControlled="false" />
         <span>{{ link.text }}</span>
       </NuxtLink>
     </template>
     <ResumeLink />
-    <EmailLink />
   </div>
+  <EmailLink />
 </template>
 
 <script setup lang="ts">

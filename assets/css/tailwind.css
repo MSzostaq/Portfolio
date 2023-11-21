@@ -9,3 +9,8 @@
 .light {
   @apply text-gray-700 bg-gray-50;
 }
+
+*::selection {
+  color: white;
+  background: orange;
+}

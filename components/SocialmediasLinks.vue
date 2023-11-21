@@ -1,6 +1,6 @@
 <template>
   <div class="flex space-x-4">
-    <template v-for="link in links" :key="link.to">
+    <template v-for="link in LINKS" :key="link.to">
       <NuxtLink :to="link.to" target="_blank" class="text-sm md:text-base">
         {{ link.text }}
       </NuxtLink>
@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-const links = [
+const LINKS = [
   {
     to: "https://github.com/MSzostaq",
     text: "GitHub",

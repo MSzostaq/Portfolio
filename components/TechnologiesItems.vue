@@ -1,12 +1,9 @@
 <template>
-  <div
-    v-for="technology in TECHNOLOGIES"
-    :key="technology.text"
-    class="flex items-center px-2 py-1 m-1 space-x-2 bg-gray-100 border-2 rounded-lg dark:bg-gray-800"
-  >
-    <component :is="technology.icon" class="w-6 h-6" :fontControlled="false" />
-    <span class="text-sm">{{ technology.text }}</span>
-  </div>
+  <TechnologyItem
+    v-for="(tech, index) in TECHNOLOGIES"
+    :key="index"
+    :technology="tech"
+  />
 </template>
 
 <script setup>
@@ -28,7 +25,7 @@ import VueIcon from "~/assets/vue.svg";
 const TECHNOLOGIES = [
   {
     icon: TypescriptIcon,
-    text: "Typescript",
+    text: "TypeScript",
   },
   {
     icon: ReactIcon,
@@ -64,7 +61,7 @@ const TECHNOLOGIES = [
   },
   {
     icon: TailwindCSSIcon,
-    text: "Tailwind",
+    text: "Tailwind CSS",
   },
   {
     icon: StyledComponentsIcon,
@@ -72,7 +69,7 @@ const TECHNOLOGIES = [
   },
   {
     icon: ScssIcon,
-    text: "SCSS",
+    text: "SASS",
   },
   {
     icon: GitIcon,

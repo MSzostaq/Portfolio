@@ -3,12 +3,17 @@
     class="flex items-center justify-start max-w-3xl p-4 border-b border-gray-300 md:p-0 md:px-8 md:py-5"
   >
     <div class="flex items-center justify-between w-full">
-      <ButtonTheme
-        @click="
-          setColorTheme($colorMode.preference === 'dark' ? 'light' : 'dark')
-        "
-      />
+      <div>
+        <NuxtLink to="/" class="relative z-20 text-xl font-black"
+          >MSzostak</NuxtLink
+        >
+      </div>
       <div class="flex space-x-4">
+        <ButtonTheme
+          @click="
+            setColorTheme($colorMode.preference === 'dark' ? 'light' : 'dark')
+          "
+        />
         <HeaderLinks />
       </div>
     </div>

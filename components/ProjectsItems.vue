@@ -1,30 +1,25 @@
 <template>
   <div v-for="project in PROJECTS" :key="project.title" class="flex flex-col">
-    <span class="mt-4 text-xl font-bold tracking-wide">{{
-      project.title
-    }}</span>
-    <span class="mt-2">{{ project.description }}</span>
+    <NuxtLink
+      class="flex items-center mt-4 space-x-1 text-xl font-bold tracking-wide cursor-pointer hover:text-orange-400"
+    >
+      <span>
+        {{ project.title }}
+      </span>
+      <LinkIcon class="w-4 h-4" :fontControlled="false" />
+    </NuxtLink>
     <NuxtImg
       :src="project.image"
       :alt="project.image"
       class="w-full mt-4 mb-2 rounded-lg shadow-sm"
     />
-    <div class="flex flex-wrap items-center mt-2">
+    <span class="mt-2">{{ project.description }}</span>
+    <div class="flex flex-wrap items-center mt-2 mb-4">
       <TechnologyItem
         v-for="(tech, index) in project.technologies"
         :key="index"
         :technology="tech"
       />
-    </div>
-    <div class="mb-8">
-      <NuxtLink
-        :to="project.url"
-        target="_blank"
-        class="flex items-center space-x-1 text-sm font-medium tracking-wide underline md:text-base hover:text-orange-400 underline-offset-2"
-      >
-        <span>See live</span>
-        <LinkIcon class="w-4 h-4" :fontControlled="false" />
-      </NuxtLink>
     </div>
   </div>
 </template>

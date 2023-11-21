@@ -4,9 +4,9 @@
   >
     <div class="flex items-center justify-between w-full">
       <div>
-        <NuxtLink to="/" class="relative z-20 text-xl font-black"
-          >MSzostak</NuxtLink
-        >
+        <NuxtLink to="/" class="relative z-20 text-xl font-black">
+          MSzostak
+        </NuxtLink>
       </div>
       <div class="flex space-x-4">
         <ButtonTheme

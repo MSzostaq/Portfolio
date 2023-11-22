@@ -1,5 +1,5 @@
 <template>
-  <Head lang="en">
+  <Head>
     <Title>Maciej Szostak · Projects</Title>
     <Meta name="description" content="Frotend developer" />
   </Head>
@@ -8,3 +8,11 @@
     <Technologies />
   </div>
 </template>
+
+<script lang="ts" setup>
+useHead({
+  htmlAttrs: {
+    lang: "en",
+  },
+});
+</script>

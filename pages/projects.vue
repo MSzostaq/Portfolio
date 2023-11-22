@@ -1,5 +1,5 @@
 <template>
-  <Head>
+  <Head lang="en">
     <Title>Maciej Szostak · Projects</Title>
     <Meta name="description" content="Frotend developer" />
   </Head>

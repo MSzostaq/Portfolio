@@ -1,5 +1,5 @@
 <template>
-  <button name="theme">
+  <button aria-label="theme">
     <svg
       v-if="$colorMode.value === 'light'"
       xmlns="http://www.w3.org/2000/svg"

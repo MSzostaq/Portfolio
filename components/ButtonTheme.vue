@@ -1,9 +1,9 @@
 <template>
   <button>
     <svg
-      v-if="$colorMode.value === 'dark'"
+      v-if="$colorMode.value === 'light'"
       xmlns="http://www.w3.org/2000/svg"
-      class="w-6 h-6 text-gray-50"
+      class="w-5 h-5 text-gray-500 hover:text-orange-500"
       viewBox="0 0 20 20"
       fill="currentColor"
     >
@@ -12,9 +12,9 @@
       />
     </svg>
     <svg
-      v-if="$colorMode.value === 'light'"
+      v-if="$colorMode.value === 'dark'"
       xmlns="http://www.w3.org/2000/svg"
-      class="w-6 h-6 text-gray-500"
+      class="w-5 h-5 text-gray-50 hover:text-orange-500"
       viewBox="0 0 20 20"
       fill="currentColor"
     >

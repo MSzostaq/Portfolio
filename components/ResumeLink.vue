@@ -2,10 +2,10 @@
   <NuxtLink
     to="/docs/cv.pdf"
     target="_blank"
-    class="flex items-center space-x-1 text-sm md:text-base hover:text-orange-500"
+    class="flex items-center space-x-1 hover:text-orange-500"
   >
     <ResumeIcon />
-    <span>Resume</span>
+    <span class="font-medium">Resume</span>
   </NuxtLink>
 </template>
 

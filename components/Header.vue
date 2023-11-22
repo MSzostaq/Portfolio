@@ -4,7 +4,7 @@
   >
     <div class="flex items-center justify-between w-full">
       <div>
-        <NuxtLink to="/" class="relative z-20 text-xl font-black">
+        <NuxtLink to="/" class="text-xl font-black hover:text-orange-500">
           MSzostak
         </NuxtLink>
       </div>

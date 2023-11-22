@@ -1,5 +1,5 @@
 <template>
-  <div class="flex space-x-4">
+  <div class="flex my-2 space-x-4">
     <template v-for="link in LINKS" :key="link.to">
       <NuxtLink
         :to="link.to"
@@ -7,7 +7,7 @@
         class="flex items-center space-x-1 hover:text-orange-500"
       >
         <component :is="link.icon" class="w-4 h-4" :fontControlled="false" />
-        <span>{{ link.text }}</span>
+        <span class="font-medium">{{ link.text }}</span>
       </NuxtLink>
     </template>
     <ResumeLink />

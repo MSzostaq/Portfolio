@@ -1,75 +1,38 @@
-# Nuxt 3 Minimal Starter
+# Introduction
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+New version of portfolio developed using Vue and [Nuxt.js](https://nuxt.com/docs/getting-started/introduction)
 
-## Setup
+# Getting started
 
-Make sure to install the dependencies:
+To run the development server locally you need to have:
 
-```bash
-# npm
-npm install
+- [Node.js](https://nodejs.org/en) (v18.18.2)
+- [Yarn](https://yarnpkg.com/getting-started/install) (v1.22.19)
 
-# pnpm
-pnpm install
+## Run Locally
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Clone the project
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+  git clone git@github.com:MSzostaq/Portfolio.git
 ```
 
-## Production
-
-Build the application for production:
+Go to the project directory
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+  cd Portfolio
 ```
 
-Locally preview production build:
+Install dependencies
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+  yarn
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Start the server
+
+```bash
+  yarn dev
+```
+
+Open http://localhost:3000 with your browser to use development server.

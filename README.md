@@ -14,7 +14,7 @@ To run the development server locally you need to have:
 Clone the project
 
 ```bash
-  git clone git@github.com:MSzostaq/Portfolio.git
+  git clone https://github.com/MSzostaq/Portfolio.git
 ```
 
 Go to the project directory

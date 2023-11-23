@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center px-2 py-1 mb-2 mr-2 space-x-2 bg-gray-100 border-2 rounded-lg shadow-sm dark:border-gray-500 dark:bg-gray-700 dark:bg-opacity-50"
+    class="flex items-center px-2 py-1 mb-2 mr-2 space-x-2 bg-gray-100 border-2 rounded-lg shadow-sm dark:border-gray-500 dark:bg-gray-800 dark:bg-opacity-80"
   >
     <component :is="technology.icon" class="w-5 h-5" :fontControlled="false" />
     <span

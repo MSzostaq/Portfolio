@@ -4,7 +4,7 @@
       <NuxtLink
         :to="link.to"
         target="_blank"
-        class="flex items-center space-x-1 hover:text-orange-500 active:translate-y-0.5"
+        class="flex items-center space-x-1 hover:text-orange-500 md:active:translate-y-0.5"
       >
         <component :is="link.icon" class="w-4 h-4" :fontControlled="false" />
         <span class="font-medium">{{ link.text }}</span>

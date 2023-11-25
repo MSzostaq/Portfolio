@@ -38,7 +38,7 @@ const PROJECTS = [
   {
     title: "BrandBuddies",
     description:
-      "User-friendly marketing platform connecting influencers with major brands like Spotify, Uber and MTV. The projects was built from scratch using moderns frontend technologies with RESTful API communication for a seamless experience. It's all about making influencer-brand collaborations straightforward and effective.",
+      "User-friendly marketing platform connecting influencers with major brands like Spotify, Uber and MTV. The project was built from scratch using modern frontend technologies with RESTful API communication for a seamless experience. It's all about making influencer-brand collaborations straightforward and effective.",
     technologies: [
       { icon: TypescriptIcon, text: "TypeScript" },
       { icon: NextJSIcon, text: "Next.js" },
@@ -51,7 +51,7 @@ const PROJECTS = [
   {
     title: "Fansi",
     description:
-      "Ecommerce platform where influnecers with dedicated fan bases can effortlessly showcase and promote their products on our marketplace. The platform is designed with three key components: admins', influencers' and the marketplace. We've built a straightforward system to make selling and advertising a breeze for influencers and a delightful shopping experience for customers.",
+      "Ecommerce platform where influencers with dedicated fan bases can effortlessly showcase and promote their products on our marketplace. The platform is designed with three key components: admins', influencers' and the marketplace. We've built a straightforward system to make selling and advertising a breeze for influencers and a delightful shopping experience for customers.",
     technologies: [
       { icon: TypescriptIcon, text: "TypeScript" },
       { icon: NextJSIcon, text: "Next.js" },

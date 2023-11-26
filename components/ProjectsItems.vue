@@ -3,7 +3,7 @@
     <NuxtLink
       :to="project.url"
       target="_blank"
-      class="flex items-center mt-4 space-x-1 text-xl font-bold tracking-wide cursor-pointer w-max hover:text-orange-400"
+      class="flex items-center mt-4 space-x-1 text-xl font-bold tracking-wide cursor-pointer w-max lg:hover:text-orange-400"
     >
       <span>
         {{ project.title }}
@@ -15,7 +15,7 @@
       :alt="project.image"
       class="w-full mt-4 mb-2 rounded-lg shadow-sm"
     />
-    <span class="mt-2">{{ project.description }}</span>
+    <span class="my-2">{{ project.description }}</span>
     <div class="flex flex-wrap items-center mt-2 mb-4">
       <TechnologyItem
         v-for="(tech, index) in project.technologies"

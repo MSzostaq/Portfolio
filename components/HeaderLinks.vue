@@ -4,7 +4,7 @@
       <NuxtLink
         :to="link.to"
         class="text-sm md:text-base lg:hover:text-orange-500"
-        activeClass="font-bold text-gray-800 dark:text-gray-50 lg:dark:hover:text-orange-500"
+        activeClass="font-bold text-gray-800 dark:text-gray-50 lg:dark:hover:text-orange-500 transition-all"
       >
         {{ link.text }}
       </NuxtLink>

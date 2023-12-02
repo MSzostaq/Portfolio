@@ -3,7 +3,7 @@
     <svg
       v-if="$colorMode.value === 'light'"
       xmlns="http://www.w3.org/2000/svg"
-      class="w-5 h-5 text-gray-500 transition-all lg:hover:text-orange-500"
+      class="w-5 h-5 text-gray-500 lg:transition-all lg:hover:text-orange-500"
       viewBox="0 0 20 20"
       fill="currentColor"
     >
@@ -14,7 +14,7 @@
     <svg
       v-if="$colorMode.value === 'dark'"
       xmlns="http://www.w3.org/2000/svg"
-      class="w-5 h-5 transition-all text-gray-50 lg:hover:text-orange-500"
+      class="w-5 h-5 lg:transition-all text-gray-50 lg:hover:text-orange-500"
       viewBox="0 0 20 20"
       fill="currentColor"
     >

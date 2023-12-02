@@ -6,7 +6,7 @@
       <div>
         <NuxtLink
           to="/"
-          class="text-xl font-black transition-all lg:hover:text-orange-500"
+          class="text-xl font-black lg:transition-all lg:hover:text-orange-500"
         >
           MSzostak
         </NuxtLink>

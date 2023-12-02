@@ -17,7 +17,7 @@
     >
       <NuxtImg :src="project.image" :alt="project.image" class="w-full" />
       <div
-        class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden transition-all bg-fixed lg:bg-gray-100 lg:dark:bg-black lg:opacity-20 lg:hover:opacity-0 lg:hover:bg-transparent"
+        class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden bg-fixed lg:transition-all lg:bg-gray-100 lg:dark:bg-black lg:opacity-20 lg:hover:opacity-0 lg:hover:bg-transparent"
       ></div>
     </NuxtLink>
     <span class="my-2">{{ project.description }}</span>

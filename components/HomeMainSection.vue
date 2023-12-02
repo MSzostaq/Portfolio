@@ -9,7 +9,7 @@
       which you can see and read more about on the
       <NuxtLink
         to="/projects"
-        class="font-medium underline transition-all lg:hover:text-orange-500 underline-offset-1"
+        class="font-medium underline lg:transition-all lg:hover:text-orange-500 underline-offset-1"
         ><span>projects</span></NuxtLink
       >
       page.

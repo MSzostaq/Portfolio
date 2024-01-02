@@ -15,7 +15,12 @@
       target="_blank"
       class="relative w-full overflow-hidden bg-cover bg-[50%] bg-no-repeat mt-4 mb-2 rounded-lg shadow-sm"
     >
-      <NuxtImg :src="project.image" :alt="project.image" class="w-full" />
+      <NuxtImg
+        :src="project.image"
+        :alt="project.image"
+        class="w-full"
+        :placeholder="[50, 25, 75, 5]"
+      />
       <div
         class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden bg-fixed lg:transition-all lg:bg-gray-100 lg:dark:bg-black lg:opacity-20 lg:hover:opacity-0 lg:hover:bg-transparent"
       ></div>

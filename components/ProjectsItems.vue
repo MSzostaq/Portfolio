@@ -13,7 +13,7 @@
     <NuxtLink
       :to="project.url"
       target="_blank"
-      class="relative w-full overflow-hidden bg-cover bg-[50%] bg-no-repeat mt-4 mb-2 rounded-lg shadow-sm"
+      class="relative w-full overflow-hidden bg-cover bg-[50%] bg-no-repeat mt-4 mb-2 rounded-lg shadow-sm lg:hover:-translate-y-0.5 lg:transition-all"
     >
       <NuxtImg
         :src="project.image"

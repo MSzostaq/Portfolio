@@ -6,7 +6,7 @@
         Maciej Szostak
       </h1>
       <h2 class="text-xl font-semibold text-gray-600 dark:text-gray-400">
-        Frontend developer
+        Sotfware Engineer
       </h2>
     </div>
     <SocialmediasLinks />

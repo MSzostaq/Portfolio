@@ -8,7 +8,6 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: "",
   },
-  devtools: { enabled: true },
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
     configPath: "tailwind.config.js",
@@ -16,5 +15,8 @@ export default defineNuxtConfig({
     config: {},
     injectPosition: 0,
     viewer: true,
+  },
+  typescript: {
+    typeCheck: true,
   },
 });

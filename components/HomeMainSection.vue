@@ -3,7 +3,7 @@
     <p class="tracking-wide">
       My journey into the world of programming began nearly 4 years ago, when I
       decided to try something new and learn new things everyday as a Frontend
-      Developer. Since February 2022 I'm a professional Frontend Developer in
+      Developer. Since February 2022 I was professional Frontend Developer in
       small software house based in Cracow - ReasonApps. In ReasonApps I worked
       with frontend layer of ecommerce and marketing platforms for influencers
       which you can see and read more about on the
@@ -12,15 +12,15 @@
         class="font-medium underline lg:transition-all lg:hover:text-orange-500 underline-offset-1"
         ><span>projects</span></NuxtLink
       >
-      page.
+      page. From beginning of 2024 I changed company and currently I'm working
+      as a Software Engineer in Acceleroid, where we are working with Internet
+      of Things (IoT) projects.
     </p>
     <p class="tracking-wide">
       I'm open-minded person, I like to learn new things and create beautiful
       and user-friendly interfaces. I'm a big fan of SSR, because of better
       application performance which improves users perception of developed
-      platform. Currently I try to get out of my comfort zone by learning and
-      exploring new frontend technologies such as Vue and Nuxt and also backend
-      stuff.
+      platform.
     </p>
     <p class="tracking-wide">
       Apart from programming I enjoy sports activities such as cycling

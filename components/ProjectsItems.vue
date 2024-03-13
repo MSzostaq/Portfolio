@@ -18,7 +18,7 @@
       <NuxtImg
         :src="project.image"
         :alt="project.image"
-        class="w-full"
+        class="w-full aspect-video"
         :placeholder="[50, 25, 75, 5]"
       />
       <div
@@ -37,14 +37,31 @@
 </template>
 
 <script setup>
+import AWSIcon from "~/assets/aws-icon.svg";
 import GraphQLIcon from "~/assets/graphql.svg";
 import LinkIcon from "~/assets/link.svg";
 import NextJSIcon from "~/assets/nextjs.svg";
+import ReactIcon from "~/assets/react.svg";
 import ScssIcon from "~/assets/scss.svg";
+import StyledComponentsIcon from "~/assets/styled_components.svg";
 import TailwindCSSIcon from "~/assets/tailwindcss.svg";
 import TypescriptIcon from "~/assets/typescript.svg";
 
 const PROJECTS = [
+  {
+    title: "Acceleroid",
+    description:
+      "The Internet of Things (IoT) platform serves as a pivotal technology for large corporations from all around the world across various industries, facilitating the gathering, storage, and analysis of data obtained from electronic sensors embedded throughout their global factory networks.",
+    technologies: [
+      { icon: TypescriptIcon, text: "TypeScript" },
+      { icon: ReactIcon, text: "React" },
+      { icon: GraphQLIcon, text: "GraphQL" },
+      { icon: StyledComponentsIcon, text: "styled-components" },
+      { icon: AWSIcon, text: "Amazon Web Services" },
+    ],
+    image: "/acceleroid.png",
+    url: "https://www.acceleroid.com/",
+  },
   {
     title: "BrandBuddies",
     description:

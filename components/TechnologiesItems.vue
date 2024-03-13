@@ -7,6 +7,7 @@
 </template>
 
 <script setup>
+import AWSIcon from "~/assets/aws-icon.svg";
 import ApolloIcon from "~/assets/apollo.svg";
 import FigmaIcon from "~/assets/figma.svg";
 import GitIcon from "~/assets/git.svg";
@@ -58,6 +59,10 @@ const TECHNOLOGIES = [
   {
     icon: ApolloIcon,
     text: "Apollo",
+  },
+  {
+    icon: AWSIcon,
+    text: "Amazon Web Services",
   },
   {
     icon: TailwindCSSIcon,

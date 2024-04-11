@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .dark {
-  @apply text-gray-300 bg-gray-900;
+  @apply font-mono text-gray-300 bg-gradient-to-bl from-gray-900 via-gray-800 to-slate-800;
 }
 
 .light {
-  @apply text-gray-700 bg-gray-100;
+  @apply font-mono text-gray-700 bg-gray-100;
 }
 
 *::selection {

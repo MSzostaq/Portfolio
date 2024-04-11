@@ -1,7 +1,7 @@
 <template>
   <Head>
-    <Title>Maciej Szostak · Frontend Developer</Title>
-    <Meta name="description" content="Frotend developer" />
+    <Title>Maciej Szostak · Software Engineer</Title>
+    <Meta name="description" content="Software engineer" />
   </Head>
   <div class="flex flex-col items-center justify-start py-12 space-y-10">
     <HomeTopSection />

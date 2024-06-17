@@ -3,7 +3,7 @@
     <NuxtLink
       :to="project.url"
       target="_blank"
-      class="flex items-center mt-4 space-x-1 text-xl font-bold tracking-wide cursor-pointer w-max lg:hover:text-orange-400"
+      class="flex items-center mt-4 space-x-1 text-xl font-bold tracking-wide cursor-pointer w-max lg:hover:text-orange-400 word-break"
     >
       <span>
         {{ project.title }}
@@ -51,7 +51,7 @@ const PROJECTS = [
   {
     title: "Acceleroid",
     description:
-      "The Internet of Things (IoT) platform serves as a pivotal technology for large corporations from all around the world across various industries, facilitating the gathering, storage, and analysis of data obtained from electronic sensors embedded throughout their global factory networks.",
+      "Brüel & Kjær Vibro Internet of Things (IoT) platform serves as a pivotal technology for large corporations from all around the world across various industries, facilitating the gathering, storage, and analysis of data obtained from electronic sensors embedded throughout their global factory networks.",
     technologies: [
       { icon: TypescriptIcon, text: "TypeScript" },
       { icon: ReactIcon, text: "React" },

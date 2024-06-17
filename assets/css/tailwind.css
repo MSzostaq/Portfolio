@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .dark {
-  @apply font-mono text-gray-300 bg-gradient-to-bl from-gray-900 via-gray-800 to-slate-800;
+  @apply font-mono text-gray-300 bg-gray-800;
 }
 
 .light {
